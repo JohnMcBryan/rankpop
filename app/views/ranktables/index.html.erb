@@ -3,7 +3,7 @@
 <ul>
   <% @ranktables.each do |table| %>
     <li>
-      <strong><%= table.title %></strong> (<%= table.author %>):
+      <strong><%= link_to(table.title, table) %></strong> (<%= table.author %>):
       <%= table.description %>
       <%= table.options %>
       <%= table.created_at %>
