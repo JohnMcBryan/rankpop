@@ -1,0 +1,27 @@
+<%= form_for(@ranktable) do |f| %>
+  <p>
+    <%= f.label :title %><br/>
+    <%= f.text_field :title, autofocus: true %>
+  </p>
+  <p>
+    <%= f.label :description %><br/>
+    <%= f.text_area :description, cols: 40, rows: 7 %>
+  </p>
+  <p>
+    <%= f.label :author %><br/>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :options %><br/>
+      <%= f.text_field :options, multiple: true %>
+      <%= f.text_field :options, multiple: true %>
+      <%= f.text_field :options, multiple: true %>
+  </p>
+  <p>
+    <%= f.hidden_field :count, :value => 2 %>
+  </p>
+  <p>
+    <%= f.submit %>
+    <%= link_to "Cancel", root_path %>
+  </p>
+<% end %>

@@ -1,0 +1,21 @@
+<ranktable>
+  <header>
+    <h1><%= @ranktable.title %></h1>
+  </header>
+  <p>
+    <%= @ranktable.description %>
+  </p>
+  <h2>Author</h2>
+  <p>
+    <%= @ranktable.author %>
+  </p>
+  <h3>Date</h3>
+  <p>
+    <%= @ranktable.created_at %>
+  </p>
+  <h3>Options</h3>
+  <p>
+    <%= @ranktable.options%>
+  </p>
+  <%= link_to("Homepage", root_path) %>
+</ranktable>
