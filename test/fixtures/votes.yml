@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tableID: 
+  userID: 
+  option: 
+  rank: 1
+
+two:
+  tableID: 
+  userID: 
+  option: 
+  rank: 1
