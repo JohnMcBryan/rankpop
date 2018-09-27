@@ -1,0 +1,12 @@
+<h1>Rank Tables Page</h1>
+
+<ul>
+  <% @ranktables.each do |table| %>
+    <li>
+      <strong><%= table.title %></strong> (<%= table.author %>):
+      <%= table.description %>
+      <%= table.options %>
+      <%= table.created_at %>
+    </li>
+  <% end %>
+</ul>
