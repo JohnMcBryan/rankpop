@@ -250,3 +250,443 @@ Migrating to CreateVotes (20180927015442)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mVote Create (0.5ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Thing 2"], ["rank", 2], ["created_at", "2018-09-27 01:57:11.051638"], ["updated_at", "2018-09-27 01:57:11.051638"]]
   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-09-28 20:35:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 155ms (Views: 144.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 20:35:38 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 19.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 20:35:46 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zMvXbZWKw6SWHcitHcanR+TZ84D4YwJSBtkpGJcpn9bPJbg0yGHE8IJ+bl2i4WdKj4PVhMiUdgvL3Z53ozEZrQ==", "option"=>"3", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 20:35:50 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 20:36:00 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PrmbBjann4K20cUfkY5+kH+z/5ONFwRHmXjPL3qj7oU9V/Rfa0yY1qKyY+8uqb6dFOnZl73gcB5UfHhATrto/g==", "option"=>"jack", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 20:43:24 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (126.3ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_field_tag' for #<ActionView::Helpers::FormBuilder:0x00007fd6d83e1fa0>
+Did you mean?  text_field):
+    20:       <%= fields_for 'votes[]', text do |p| %>
+    21:         <div class="field">
+    22:           <%= text %>
+    23:           <%= p.text_field_tag :option %>
+    24:         </div>
+    25:       <% end %>
+    26:     <% end %>
+  
+app/views/ranktables/show.html.erb:23:in `block (3 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280363644640'
+app/views/ranktables/show.html.erb:20:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280363644640'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280363644640'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280363644640'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 20:43:42 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `option' for "[\"Thing 1\"":String):
+    20:       <%= fields_for 'votes[]', text do |p| %>
+    21:         <div class="field">
+    22:           <%= text %>
+    23:           <%= p.text_field :option %>
+    24:         </div>
+    25:       <% end %>
+    26:     <% end %>
+  
+app/views/ranktables/show.html.erb:23:in `block (3 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280388084380'
+app/views/ranktables/show.html.erb:20:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280388084380'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280388084380'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280388084380'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 20:58:01 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `option' for #<Array:0x00007fd6da144840>):
+    20:       <%= fields_for 'votes[]', @vote do |p| %>
+    21:         <div class="field">
+    22:           <%= text %>
+    23:           <%= p.text_field :option %>
+    24:         </div>
+    25:       <% end %>
+    26:     <% end %>
+  
+app/views/ranktables/show.html.erb:23:in `block (3 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280379234080'
+app/views/ranktables/show.html.erb:20:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280379234080'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280379234080'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280379234080'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 20:58:17 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 20:58:23 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zqk55WDvLY2wmu2FSYwpaEzMq++dJ7gyrlH28jHtuGpffMZjLsSCWfq1cZcPZc/hDfdvdJfFD5IOmdAkXl+vZQ==", "option"=>"3", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 20:58:45 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zqk55WDvLY2wmu2FSYwpaEzMq++dJ7gyrlH28jHtuGpffMZjLsSCWfq1cZcPZc/hDfdvdJfFD5IOmdAkXl+vZQ==", "option"=>"3", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:08:21 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `option' for #<Array:0x00007fd6d84703b8>):
+    20:       <%= fields_for :vote, @vote do |p| %>
+    21:         <div class="field">
+    22:           <%= text %>
+    23:           <%=p.text_field :option %>
+    24:         </div>
+    25:       <% end %>
+    26:     <% end %>
+  
+app/views/ranktables/show.html.erb:23:in `block (3 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280364105360'
+app/views/ranktables/show.html.erb:20:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280364105360'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280364105360'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280364105360'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:15:37 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `option' for #<Array:0x00007fd6d993c1c0>):
+    20:       <%= fields_for :vote, @vote do |p| %>
+    21:         <div class="field">
+    22:           <%= text %>
+    23:           <%=p.text_field :option %>
+    24:         </div>
+    25:       <% end %>
+    26:     <% end %>
+  
+app/views/ranktables/show.html.erb:23:in `block (3 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280374593380'
+app/views/ranktables/show.html.erb:20:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280374593380'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280374593380'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280374593380'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:27:35 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_field' for nil:NilClass):
+    20:       <%= text_field_tag "votes[votes][]vote[option]" %>
+    21:       <div class="field">
+    22:           <%= text %>
+    23:           <%=p.text_field :option %>
+    24:         </div>
+    25:     <% end %>
+    26:     <div class="actions">
+  
+app/views/ranktables/show.html.erb:23:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280388218700'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280388218700'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280388218700'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:28:26 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:28:32 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fDnVNrrvgN0LaemImR9XhGoETw/BmVpyZzwEd2g92vdF7Cqw9MQvCUFGdZrf9rENKz+LlMt77dLH9CKhB4/N+A==", "votes"=>{"votes"=>[{"vote"=>{"option"=>"1"}}, {"vote"=>{"option"=>"2"}}, {"vote"=>{"option"=>"3"}}]}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for #<Array:0x00007fd6df93e140>):
+  
+app/controllers/votes_controller.rb:16:in `vote_params'
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:29:33 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:29:34 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:29:38 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UHTOjlMxK7/rBIUGJ2npKduiFxX62zQCHy+TqTvr6CdpoTEIHRqEa6ErGRRhgA+gmpnTjvA5g6K/57V/VFn/KA==", "votes"=>[{"vote"=>{"option"=>"1"}}, {"vote"=>{"option"=>"2"}}, {"vote"=>{"option"=>"3"}}], "commit"=>"Save changes"}
+Unpermitted parameter: :vote
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for #<ActionController::Parameters:0x00007fd6db23aff0>):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:30:01 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:30:07 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pAzoNcnmihkM+4uXCBARErjU0xM06Zgyaz1wZsd/cPqd2Rezh80lzUbUF4VO+feb+e8XiD4LL5LL9VawqM1n9Q==", "vote"=>{"option"=>"3"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:30:29 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:30:33 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJDwqRFW/safakBP4DZ6HQKTQwGtMb1eL448okh7W9M1RQ8vX31REtVF3F2m35yUQ6iHmqfTCv6PRhp0J8lM3A==", "votes"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"option"=>"1"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:32:56 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 21.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:33:04 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ASjXx1IaMBAEHuPktMdhjO12OpSrs462yOqZlp5a5eE4/ShBHDGfxE4xf/byLocFrE3+D6FRORZoIr9A8ejy7g==", "votes"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"4"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"option"=>"1"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:33:17 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 19.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:33:21 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4E1ZmtiIUAJQdxrLVTFXqgFKonRJQLVKyPQlgqcBdlXZmKYclqP/1hpYhtkT2LEjQHFm70OiAupoPANUyLNhWg==", "votes"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"option"=>"1"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:36:38 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4E1ZmtiIUAJQdxrLVTFXqgFKonRJQLVKyPQlgqcBdlXZmKYclqP/1hpYhtkT2LEjQHFm70OiAupoPANUyLNhWg==", "votes"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"option"=>"1"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 21:36:42 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 21:36:49 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G2ak6W8BYBXJYHOVIz6x13c+xswvRatghZBblJ5sfAEis1tvISrPwYNP74dl11deNgUCVyWnHMAlWH1C8d5rDg==", "options"=>[{"num"=>"1"}, {"num"=>"2"}, {"num"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'

@@ -14,15 +14,10 @@
     <%= @ranktable.created_at %>
   </p>
   <h3>Options</h3>
-
+  <% @it = 0 %>
   <%= form_tag votes_path do %>
     <% @ranktable.options.split(/,/).each do |text| %>
-      <%= fields_for 'votes[]', text do |p| %>
-        <div class="field">
-          <%= text %>
-          <%= text_field_tag :option %>
-        </div>
-      <% end %>
+      <%= text_field_tag "options[][option]" %>
     <% end %>
     <div class="actions">
       <%= submit_tag %>
