@@ -2779,3 +2779,592 @@ Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.2ms)
 
 
   [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:11:05 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 185ms (Views: 175.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:19:19 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:20:34 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (14.7ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"login"}, missing required keys: [:id]):
+    2:   <nav>
+    3:     <ul>
+    4:       <li>
+    5:         <%= link_to 'Homepage', login_path %>
+    6:       </li>
+    7:       <li>
+    8:         <%= link_to 'Rank Tables', ranktable_path %>
+  
+app/views/layouts/_sidebar.html.erb:5:in `_app_views_layouts__sidebar_html_erb__2141032963389322553_70276994855760'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___863548686008041115_70277001050080'
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:21:21 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (2.6ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"login"}, missing required keys: [:id]):
+    2:   <nav>
+    3:     <ul>
+    4:       <li>
+    5:         <%= link_to 'Homepage', login_path %>
+    6:       </li>
+    7:       <li>
+    8:         <%= link_to 'Rank Tables', ranktable_path %>
+  
+app/views/layouts/_sidebar.html.erb:5:in `_app_views_layouts__sidebar_html_erb__2141032963389322553_70277012327780'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___863548686008041115_70277054174500'
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:27:12 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (2.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ranktables"}, missing required keys: [:id]):
+     5:         <%= link_to 'Homepage',  login_index_path%>
+     6:       </li>
+     7:       <li>
+     8:         <%= link_to 'Rank Tables', ranktable_path %>
+     9:       </li>
+    10:       <li>
+    11:         <%= link_to 'New Rank Table', new_ranktable_path %>
+  
+app/views/layouts/_sidebar.html.erb:8:in `_app_views_layouts__sidebar_html_erb__2141032963389322553_70277055339740'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___863548686008041115_70277055680700'
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:27:31 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (193.6ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ranktable_index_path' for #<#<Class:0x00007fd54db29e70>:0x00007fd548a80e38>
+Did you mean?  ranktable_vote_path
+               ranktable_votes_path):
+     5:         <%= link_to 'Homepage',  login_index_path%>
+     6:       </li>
+     7:       <li>
+     8:         <%= link_to 'Rank Tables', ranktable_index_path %>
+     9:       </li>
+    10:       <li>
+    11:         <%= link_to 'New Rank Table', new_ranktable_path %>
+  
+app/views/layouts/_sidebar.html.erb:8:in `_app_views_layouts__sidebar_html_erb__2141032963389322553_70276993730480'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___863548686008041115_70277011792900'
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:28:13 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:28:16 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 11:28:18 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:28:21 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 11:28:24 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:28:25 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/new" for 127.0.0.1 at 2018-09-30 11:28:27 -0400
+Processing by RanktablesController#new as HTML
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 11:28:28 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 11:28:30 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:28:31 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:29:58 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-09-30 11:30:00 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 11:30:12 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PBVKG4zdnafrjvxC5eYBVu40y1nZt0fRBesQWiPLtHM/+yVC0Taa8//tWrJawcFbhW7tXelAM4jI76c1F9MyCA==", "options"=>{"Iron Man"=>"32", " Hulk "=>"45", " Thor"=>"44"}, "user"=>"1", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 32], ["created_at", "2018-09-30 15:30:12.886563"], ["updated_at", "2018-09-30 15:30:12.886563"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 45], ["created_at", "2018-09-30 15:30:12.889374"], ["updated_at", "2018-09-30 15:30:12.889374"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 44], ["created_at", "2018-09-30 15:30:12.891539"], ["updated_at", "2018-09-30 15:30:12.891539"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+Redirected to http://localhost:3000/ranktables
+Completed 302 Found in 16ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:30:12 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 11:30:25 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 11:30:30 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 12:25:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 194ms (Views: 186.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:25:14 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"login"}, missing required keys: [:id]):
+    1: <h1>Login Page</h1>
+    2: 
+    3: <span>
+    4:   <%= link_to "Login", login_path %>
+    5: </span>
+  
+app/views/login/index.html.erb:4:in `_app_views_login_index_html_erb__3680923422682765480_70273612623440'
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:28:12 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:28:25 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:28:25 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:28:25 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:28:25 -0400
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:32:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 169ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:32:18 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:32:18 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:32:18 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:32:18 -0400
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:34:34 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 181ms (Views: 173.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:34:35 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:34:35 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:34:36 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:34:36 -0400
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:41:25 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 169ms (Views: 161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:41:26 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:41:26 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:41:26 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:41:26 -0400
+Started GET "/auth/google_oauth2/callback?state=8c7b9605595d3fee7855ed87aff3e2f6dc3d5f79360bdee6&code=4/agBYnRTDdYxnkbidj-7H8WfuirfgXBPb52h6Y41lfyv7J-F1Rnx491sB9VOVM3dr0_amd6giFO4XOjh3jdS9-JM&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-09-30 12:41:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth/google_oauth2/callback"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:44:09 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:44:10 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:44:11 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:44:11 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:44:11 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:44:11 -0400
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:45:11 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:45:13 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:45:13 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:45:13 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:45:13 -0400
+Started GET "/auth/google_oauth2/callback?state=445ec004e062ffdaf76a16581c656f0ff9d39305a2378a43&code=4/agAbr8Q2bSORf19NIyUx1vUs904_ufAqGXa5YqcJtyGCHR3ZOckUw65GIyF4XI3xTG_eq9DI83fojbzopSv9dis&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-09-30 12:45:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth/google_oauth2/callback"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:48:26 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:48:27 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:48:27 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:48:27 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:48:27 -0400
+Started GET "/auth/google_oauth2/callback?state=483ab9b058d7f32d57e7b68b1ea6f57ed5a987a09e2cecf2&code=4/agDaNOo_k3bdMoWvh9BByHQ2qbSy6DizqSD4Lan-EDfv6an1B5f2V5b4U9GgT7Tt1Do6dC7hp0QBNP9HcD-tAJI&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-09-30 12:48:30 -0400
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 12:48:30 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:50:43 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:50:45 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:50:45 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:50:45 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:50:45 -0400
+Started GET "/auth/google_oauth2/callback?state=2b475fa8a9d96727fa06a97820e6ff1e9707ec4f82495380&code=4/agBVyukvw3T71wiDLpmBGfcGLqbb9UdEkZ1_gtvsh8rY_brDZ8FuYMvOnJFpdvBHOEeRFebtXjZqRjnjeE4Uo2k&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-09-30 12:50:48 -0400
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 12:50:49 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-09-30 12:53:01 -0400
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:53:03 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:53:03 -0400
+Started GET "/register" for 127.0.0.1 at 2018-09-30 12:53:03 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-09-30 12:53:03 -0400
+Started GET "/auth/google_oauth2/callback?state=119cca8043b04c9a2b1c817983ac208c8ec1e1aadda3e3a9&code=4/agARGabtJw3ES_tQZaFB7nUc1HWUIlL2jLW9bJ-wGtGz035R6EHHnSnQHLsB-6PEACJWKTxLZEHTVaZo2uGsnA0&scope=https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2018-09-30 12:53:06 -0400
+Started GET "/ranktables" for 127.0.0.1 at 2018-09-30 12:53:06 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+

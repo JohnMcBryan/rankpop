@@ -7,7 +7,7 @@ class VotesController < ApplicationController
     params["options"].each do |key, value|
       Vote.create(tableID: params["tableID"], userID: params["user"], option: key, rank: value)
     end
-    redirect_to root_path
+    redirect_to ranktables_path
   end
 
   private
