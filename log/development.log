@@ -690,3 +690,1684 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 NoMethodError (undefined method `each' for nil:NilClass):
   
 app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 22:12:08 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 22:12:14 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OxbcUNTyjq0pPQ2nCavkkf5Y9C5cqgSZ+qN31V9dH9wCwyPWmtkheWMSkbVPQgIYv2MwtVZIszlaa1EDMO8I0w==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-28 22:13:24 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-28 22:13:36 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5T1lkmH2ESuUK51tLSiEDyD31eFzXNlQalQfDu+p1gnc6JoUL92+/94EAX9rwWKGYcwRenm+bvDKnDnYgBvBBg==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2018-09-29 22:56:15 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.4ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 134ms (Views: 125.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 22:56:20 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 22:56:26 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kyCqIjZcehz0FJeZzj1xnUcnTJw+XWVME3CvW55Ap7qQzsV7a7d9SOB3MWlxGrGQLH1qmA6qERXedBg0qlghwQ==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 22:58:49 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 22:58:56 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GIE7hV/45iClPzkczTvonF++vMK/wwmL3gamhV6G5Ldt/toW1RMTMi7YPY13QkrMEU+aAAdu4aPsDxMesgMnQ==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:03:10 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:03:12 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:03:31 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:05:23 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:07:54 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:08:11 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:08:44 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:08:53 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kzjh6jXaSlD374dDhfO4jbUda80sxslEUOB+/oa6lNES7R5se/HlhL3AG1HDGl4E9CavViYkfuTwKFgo6QiD3g==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:09:31 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:09:32 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:10:26 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:10:31 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lLCZKqg5g3Z4Ap20BNknx8BYBoDkEEqwrwEDR356vMetZWas5hIsojItAaZCMMFOgWPCG+7y/RAPySWREciryA==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:13:16 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:13:23 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TEABTSdcQEX5oTjN2TQY1J3nt/vqQbn9ba8TZT12C711lf7LaXfvkbOOpN+f3f5d3NxzYOCjDl3NZzWzUsQcsg==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:14:04 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:17:51 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:18:08 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:18:14 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oXAEUUJ+C+cOl6E2LYOnOS+3qAKtiZBR0AGP6S2atJ+YpfvXDFWkM0S4PSRrakGwboxsmadrJ/Fwyak/QiijkA==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "user"=>"1", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:18:39 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oXAEUUJ+C+cOl6E2LYOnOS+3qAKtiZBR0AGP6S2atJ+YpfvXDFWkM0S4PSRrakGwboxsmadrJ/Fwyak/QiijkA==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "user"=>"1", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:18:44 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:18:52 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZtBq0EoTo+B9wmXbDvtdgA01Via+f9NhDo2Jx+OOU/pfBZVWBDgMNDft+clIErsJTA6SvbSdZMGuRa8RjDxE9Q==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "user"=>"1", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:19:17 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    18:   <%= form_tag votes_path do %>
+    19:     <% @ranktable.options.split(/,/).each do |text| %>
+    20:       <%= text.tr('[]', '').tr('"','')  %>
+    21:       <%= text_field_tag :options[][option] %><br/>
+    22:     <% end %>
+    23:     <%= hidden_field_tag :user , "1"%>
+    24:     <div class="actions">
+  
+app/views/ranktables/show.html.erb:21:in `[]'
+app/views/ranktables/show.html.erb:21:in `block (2 levels) in _app_views_ranktables_show_html_erb___2000905756282166884_70280364309540'
+app/views/ranktables/show.html.erb:19:in `each'
+app/views/ranktables/show.html.erb:19:in `block in _app_views_ranktables_show_html_erb___2000905756282166884_70280364309540'
+app/views/ranktables/show.html.erb:18:in `_app_views_ranktables_show_html_erb___2000905756282166884_70280364309540'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:19:40 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" ORDER BY "ranktables"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:23:31 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:23:38 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0DcB1EzHRagquEANp4hyqC7JCa3nqzSzT5uxTia0eMSlSOBHxiywuqFfRJwd8dD4YDgvb18G3Jt9kgTVyjG7A==", "options"=>[{"option"=>"1"}, {"option"=>"2"}, {"option"=>"3"}], "user"=>"Jack", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/votes_controller.rb:7:in `create'
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes"[0m
+  [1m[36mVote Load (0.2ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/votes" for 127.0.0.1 at 2018-09-29 23:43:21 -0400
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for VotesController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:43:26 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:43:27 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:43:33 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ocfIZL0T4CYwVO2vg6ofoi+0ioUby+c1X3lzALcNvV6YEjfi8zhP8np7cb3FQ/krbo9OHhEpUJX/sVXW2L+qUQ==", "votes"=>[{"rank"=>"1"}, {"rank"=>"2"}, {"rank"=>"3"}], "options"=>[{"option"=>"[\"Thing 1\""}, {"option"=>" \"Thing 2 \""}, {"option"=>" \"Thing 3\"]"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Unpermitted parameter: :rank
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"rank"=>"1"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:44:23 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:44:57 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:45:02 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5QCEwcQb0ss/i2nsCD0lAGsyaYENXrrRoBivjnIMs0SQf2VSTvAn2bRsbX2yRIdQJcNPQ7XzUvmSERoVnolwg==", "votes"=>[{"rank"=>"1"}, {"rank"=>"2"}, {"rank"=>"3"}], "options"=>[{"option"=>"Thing 1"}, {"option"=>" Thing 2 "}, {"option"=>" Thing 3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Unpermitted parameter: :rank
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"rank"=>"1"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:45:29 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:45:38 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eUJFvVrSwUqjt/LbwpnL54n6tllpGMFmjPVSCXl42OBAl7o7FPlunumYbsmEcC1uyMFywmP6dsYsPXTfFsrP7w==", "votes"=>[{"rank"=>"3"}, {"rank"=>"21"}, {"rank"=>"1"}], "options"=>[{"option"=>"Thing 1"}, {"option"=>" Thing 2 "}, {"option"=>" Thing 3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Unpermitted parameter: :rank
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for <ActionController::Parameters {"rank"=>"3"} permitted: false>:ActionController::Parameters):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:48:58 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:48:59 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:49:53 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:49:54 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:49:59 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N7g6Dgo1hg0WDHBWRYADTcZ6l7xK3IXEbZuiIjXq8/UObcWIRB4p2Vwj7EQDaeXEh0FTJ0A+MmTNU4T0Wljk+g==", "votes"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "options"=>[{"option"=>"Thing 1"}, {"option"=>" Thing 2 "}, {"option"=>" Thing 3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Unpermitted parameters: :Thing 1, : Thing 2 , : Thing 3
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for #<ActionController::Parameters:0x00007fd6dfa9b8a8>):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:52:42 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 19.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:52:50 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ETkyPYCfgV1+kAsjU1ydfEGtrlIxdsyaBFT/R4CwNTwo7M27zrQuiTS/lzEVtXv1AJZqyTuUezqknNmR7wIiMw==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Unpermitted parameters: :Thing 1, : Thing 2 , : Thing 3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Create (1.0ms)[0m  [1m[32mINSERT INTO "votes" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-09-30 03:52:50.542510"], ["updated_at", "2018-09-30 03:52:50.542510"]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-29 23:52:50 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes"[0m
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:54:29 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 23.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:54:34 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypbQth2jTw/CMzJw3d+Sg6ZE0pNkNo3Mz0B0YsslN/jJeL/vQEhIW9ZQlIBi+FKOzR70l1TB+ZUCRMMN/z2xgw==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/votes_controller.rb:11:in `+'
+app/controllers/votes_controller.rb:11:in `create'
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:54:47 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 21.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:54:57 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5OUuHlufmjQfEAVUL+jJrFtTZhUSDnCxELOQ0snKOVvdMNGYFbQ14FU/mUZpAS8lGmiijhjsxxGwe7YEpnguVA==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"3", " Thing 3"=>"2"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-29 23:54:57 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:55:36 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 24.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:55:41 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xnCDErRlw6eUGeR0ve0od2GQ8ESKRjCx1ab/cAqUvuzFnuxL6Y7E84B6QoQCyuh6CsrWQLqxROgYokgfPow4lw==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-29 23:55:41 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:57:02 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 23.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:57:07 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gVHXGpEsR5gxvuv2BwLVOEF/gQ/IjiKx0ZGjKyZSSWuCv7hDzMdAzCXdTQa4JRU1KiWnC/h5VugclRREEkrPEA==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for #<ActionController::Parameters:0x00007fd6e148ae80>):
+  
+app/controllers/votes_controller.rb:8:in `block in create'
+app/controllers/votes_controller.rb:7:in `each'
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2018-09-29 23:57:21 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-29 23:57:34 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 22.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-29 23:57:38 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQGgbJpkyGxxZ4agVAf2vphmxHMONgyJ1go8ljzOAN5+7881x4/POGUEIFDrIDaz8zzidz7BeNAbDov5CNaGpQ==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-29 23:57:39 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:00:07 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-30 00:00:08 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 25.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:00:13 -0400
+  
+SyntaxError (/Users/johnmcbryan/Documents/rankpop/app/controllers/votes_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    params["options"]tr('[]', '').split(',').map(&:t...
+                     ^~):
+  
+app/controllers/votes_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-30 00:00:33 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 19.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:00:37 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvP2bsqfr8xCQE3pPRpoxetz2Fe7W9NQ0edo1/Tz+CYLJgnohLQAGAhv0ft7845MqkgczLG5ZPBxL04Bm0HvKQ==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `tr' for #<Array:0x00007fd6d85b7c80>
+Did you mean?  try):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:01:10 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvP2bsqfr8xCQE3pPRpoxetz2Fe7W9NQ0edo1/Tz+CYLJgnohLQAGAhv0ft7845MqkgczLG5ZPBxL04Bm0HvKQ==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:01:10 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.6ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-30 00:01:12 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 32.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:01:17 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ITI2vvry1yOS7afRzSMJelRN0lBocmW8vu6T761gL4Qi3FnnpxnQd4aOASFyBMl3Pxf0VFiFEeVz6iSAmXip/w==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:01:17 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:06:38 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-30 00:06:43 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 25.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:06:48 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oj/MzDiyJOHnA7Us1cFSWYBYfMFPJGccK3BJ3zBQb0850aOVZVkjtfNgE9xq5pJU6wJaxX/TE0XmdP6wBEjpNA==", "options"=>[{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}], "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:06:48 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/new" for 127.0.0.1 at 2018-09-30 00:07:09 -0400
+Processing by RanktablesController#new as HTML
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ranktables" for 127.0.0.1 at 2018-09-30 00:07:50 -0400
+Processing by RanktablesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DOoJKhht68PCQtpXkVSiDktvMNiTjOtoljbWn53TLXENE/oL9/8tKySWeCGY1UhcJqY5eyv00e5JeNvOOJr80A==", "ranktable"=>{"title"=>"MCU Moives", "description"=>"Best MCU Movie", "author"=>"Jack", "options"=>["Iron Man ", "Hulk ", "Thor"], "count"=>"2"}, "commit"=>"Create Ranktable"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:28
+  [1m[36mRanktable Create (0.4ms)[0m  [1m[32mINSERT INTO "ranktables" ("title", "description", "author", "count", "options", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "MCU Moives"], ["description", "Best MCU Movie"], ["author", "Jack"], ["count", 2], ["options", "[\"Iron Man \", \"Hulk \", \"Thor\"]"], ["created_at", "2018-09-30 04:07:50.324337"], ["updated_at", "2018-09-30 04:07:50.324337"]]
+  ↳ app/controllers/ranktables_controller.rb:28
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:28
+Redirected to http://localhost:3000/ranktables/3
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:07:50 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:07:56 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:08:04 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for 127.0.0.1 at 2018-09-30 00:09:16 -0400
+Processing by RanktablesController#new as HTML
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:14:32 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:14:39 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:14:47 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jAcLkcBxgropLWv1bWWNzW7J6ZdqS+znEthMagIGUKKP6WTInZqF7j1OzQXSQk3ABZPPk1q8mL7f3PsFNh7W2Q==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:14:47 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:21:47 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.4ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:21:48 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 26.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:21:53 -0400
+  
+SyntaxError (/Users/johnmcbryan/Documents/rankpop/app/controllers/votes_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/votes_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:22:29 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NLIRdqLtuqqJRe6q5u/Wll6bRN3FX4baQcjmEDuggHk3XH4v/wa9/p0mSFpZyBabNcFi2fWo8oOMzFF/D7gGAg==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:22:29 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:22:35 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 25.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:22:40 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZuMn8BV29AZU30PoL8yYj4UTWoa03ujbvQVsH11O1LllDUipSJ3zUkC85RiQ61iC7kl8goQpnIJwAdtwaVZSwg==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:22:40 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:23:43 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:23:44 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 25.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:23:49 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62dBOTdXQZJ7fQbSD86At4yZoFDwKEOr+/OflOTedtXoiS5garxGxm8eoCKw6UC658OGVMDfN/I29yj70Mbwrg==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:23:49 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:25:38 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:25:39 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 23.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:25:45 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TWy6d39ZC4FC/9wBE3MQR+51sdPEcyBak9pCvfhgGWdOgtUuIrIM1VacevGsVNBKhS+X1/SEVANe3vXSzHifHA==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:25:45 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:26:03 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:26:07 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 26.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:26:12 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qHaxyHL77iaSvOGutWhYYD8NXrGptXJx6VO8YQzD/BGrmN6RLxDpcobfR14KT5htVFd4tZlCBigkVwsOONt6ag==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:26:12 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:26:41 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:26:42 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 26.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:26:46 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQgnnN+wrYsL0kMNlkPTxFCLf1+CkhlnY5QjvVFOIWw65kjFgluq3x+x5f0pZBPJO9FZW7JlbT6ukJTSZVanFw==", "options"=>[{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}], "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each_with_index' for #<ActionController::Parameters:0x00007fd6e1107678>):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:28:46 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 25.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:28:49 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:28:53 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Jv/tl7T1G4DZc+HwG9ulfstePr4/ivHqs02h1Mxkh/dTgAwEPh7uklKU5WGhogcuha8YfIcnGcKBRBRPIOFEA==", "options"=>{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each_with_index' for #<ActionController::Parameters:0x00007fd6dfb03d90>):
+  
+app/controllers/votes_controller.rb:7:in `create'
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:29:19 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 20.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:29:24 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZmkxCB0iN2imnv153Pg7FplTFP7BrDmW5nV7o1iH+xNfvM6OUwmYvOyxYWuaEd2f2GjQZctOjjZGvV11NzXsHA==", "options"=>{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:29:24 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:30:33 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:30:35 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 24.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:30:40 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OlyON5OnRth7mkg5c3XgJuDjQn794jTqMVqpUp5EqyY5suFuzkxBjG/57snMUiAri7lkes0VQLP8Xh49qlwtXQ==", "options"=>{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:30:40 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:30:54 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 26.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:30:59 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sWCByuhsmKySswcWZr46FJ1o8y58L5f0b0MDTP5Bh+Kyju6TtYef+IbQoebZmfoZ9jLVKkzY462iR7QjylkBmQ==", "options"=>{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:30:59 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:46:58 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:46:59 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 28.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:47:06 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yHMNoHUeB5TK7i3VhgnPJbxY/qGqmtsTUewlMVXKR1nLnWL5KPUAwN6NiyU5Lg8o1wLYpZptr0qc6JJeYdLBIg==", "options"=>{"Iron Man "=>"2", " Hulk "=>"3", " Thor"=>"1"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[36mVote Create (0.7ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["tableID", 3], ["option", "Iron Man "], ["rank", 2], ["created_at", "2018-09-30 04:47:06.886505"], ["updated_at", "2018-09-30 04:47:06.886505"]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["tableID", 3], ["option", " Hulk "], ["rank", 3], ["created_at", "2018-09-30 04:47:06.890755"], ["updated_at", "2018-09-30 04:47:06.890755"]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["tableID", 3], ["option", " Thor"], ["rank", 1], ["created_at", "2018-09-30 04:47:06.893563"], ["updated_at", "2018-09-30 04:47:06.893563"]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:10
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:47:06 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mVote Load (0.2ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:47:37 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes"[0m
+  [1m[36mVote Destroy (1.5ms)[0m  [1m[31mDELETE FROM "votes"[0m
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 00:51:53 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 19.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:52:00 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o9O4Mw+y6P1EMzg6Eo+qAmfQDhXBxKMKmiHn4+ngg2CaBke1QZlHKQ4cpChUZkyLJuvKjssmFKo66cE1hlKUbw==", "options"=>{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 3], ["userID", 1], ["option", "Iron Man "], ["rank", 1], ["created_at", "2018-09-30 04:52:00.024553"], ["updated_at", "2018-09-30 04:52:00.024553"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 3], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-09-30 04:52:00.027528"], ["updated_at", "2018-09-30 04:52:00.027528"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 3], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-09-30 04:52:00.030423"], ["updated_at", "2018-09-30 04:52:00.030423"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:52:00 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-09-30 00:52:51 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 22.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 00:52:56 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W82Fhgz5tt+eYE8A62+gdbGK//r5vQyb5Aa6XoXgrkpYI+rfURKxi4oD6fBUSGB42tDZ/slKeMIpAg0xsfgoMQ==", "options"=>{"Thing 1"=>"1", " Thing 2 "=>"2", " Thing 3"=>"3"}, "user"=>"Jack", "tableID"=>"2", "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 2], ["userID", 1], ["option", "Thing 1"], ["rank", 1], ["created_at", "2018-09-30 04:52:56.280359"], ["updated_at", "2018-09-30 04:52:56.280359"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 2], ["userID", 1], ["option", " Thing 2 "], ["rank", 2], ["created_at", "2018-09-30 04:52:56.283297"], ["updated_at", "2018-09-30 04:52:56.283297"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 2], ["userID", 1], ["option", " Thing 3"], ["rank", 3], ["created_at", "2018-09-30 04:52:56.286019"], ["updated_at", "2018-09-30 04:52:56.286019"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 00:52:56 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+

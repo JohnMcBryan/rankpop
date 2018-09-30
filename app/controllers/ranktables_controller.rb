@@ -7,10 +7,6 @@ class RanktablesController < ApplicationController
   end
   def show
     @ranktable = Ranktable.find(params[:id])
-    @vote = []
-    3.times do
-      @vote << Vote.new
-    end
   end
   def edit
     @ranktable = Ranktable.find(params[:id])

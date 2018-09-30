@@ -4,8 +4,8 @@ class VotesController < ApplicationController
     @vote = Vote.new
   end
   def create
-    params["votes"].each do |vote|
-      vote.create(vote_params(vote))
+    params["options"].each do |key, value|
+      Vote.create(tableID: params["tableID"], userID: 1, option: key, rank: value)
     end
     redirect_to root_path
   end
@@ -13,7 +13,7 @@ class VotesController < ApplicationController
   private
 
   def vote_params(my_params)
-    my_params.permit(:option)
+    my_params.permit(:options)
   end
 
 end
