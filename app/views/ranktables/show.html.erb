@@ -7,7 +7,7 @@
   </p>
   <h2>Author</h2>
   <p>
-    <%= @ranktable.author %>
+    <%= @ranktable.authorName %>
   </p>
   <h3>Date</h3>
   <p>
@@ -19,8 +19,9 @@
       <%= @text = text.tr('[]', '').tr('"','')  %>
       <%= text_field_tag "options[#{@text}" %>
     <% end %>
-    <%= hidden_field_tag :user , @ranktable.author%>
+    <%= hidden_field_tag :user , @ranktable.authorID%>
     <%= hidden_field_tag :tableID , @ranktable.id%>
+
     <div class="actions">
       <%= submit_tag %>
     </div>

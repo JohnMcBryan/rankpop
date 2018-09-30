@@ -5,7 +5,7 @@ class VotesController < ApplicationController
   end
   def create
     params["options"].each do |key, value|
-      Vote.create(tableID: params["tableID"], userID: 1, option: key, rank: value)
+      Vote.create(tableID: params["tableID"], userID: params["user"], option: key, rank: value)
     end
     redirect_to root_path
   end

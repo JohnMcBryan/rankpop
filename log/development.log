@@ -2371,3 +2371,411 @@ Processing by RanktablesController#index as HTML
 Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateVotes (20180927015442)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "votes"[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180927015442"]]
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateVotes (20180927015442)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180927015442_create_votes.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "votes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "tableID" integer, "userID" integer, "option" varchar, "rank" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180927015442_create_votes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180927015442"]]
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddAuthorName (20180930050842)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddAuthorName (20180930050842)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aRanktables" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "authorName" varchar DEFAULT NULL, "count" integer DEFAULT NULL, "options" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aRanktables" ("id","title","description","authorName","count","options","created_at","updated_at")
+                     SELECT "id","title","description","author","count","options","created_at","updated_at" FROM "Ranktables"[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "Ranktables"[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "Ranktables" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "authorName" varchar DEFAULT NULL, "count" integer DEFAULT NULL, "options" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "Ranktables" ("id","title","description","authorName","count","options","created_at","updated_at")
+                     SELECT "id","title","description","authorName","count","options","created_at","updated_at" FROM "aRanktables"[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aRanktables"[0m
+  ↳ db/migrate/20180930050842_add_author_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180930050842"]]
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mVote Load (0.5ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mVote Load (0.2ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 01:13:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Ranktable >):
+     7:   </p>
+     8:   <h2>Author</h2>
+     9:   <p>
+    10:     <%= @ranktable.author %>
+    11:   </p>
+    12:   <h3>Date</h3>
+    13:   <p>
+  
+app/views/ranktables/show.html.erb:10:in `_app_views_ranktables_show_html_erb__662403559930603006_70112843812160'
+Started GET "/" for 127.0.0.1 at 2018-09-30 01:14:30 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Ranktable >):
+    3: <ul>
+    4:   <% @ranktables.each do |table| %>
+    5:     <li>
+    6:       <strong><%= link_to(table.title, table) %></strong> (<%= table.author %>):
+    7:       <%= table.description %>
+    8:       <%= table.options %>
+    9:       <%= table.created_at %>
+  
+app/views/ranktables/index.html.erb:6:in `block in _app_views_ranktables_index_html_erb___1828369890043165038_70112879154300'
+app/views/ranktables/index.html.erb:4:in `_app_views_ranktables_index_html_erb___1828369890043165038_70112879154300'
+Started GET "/" for 127.0.0.1 at 2018-09-30 01:14:51 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 212.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 01:14:53 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Ranktable >):
+    19:       <%= @text = text.tr('[]', '').tr('"','')  %>
+    20:       <%= text_field_tag "options[#{@text}" %>
+    21:     <% end %>
+    22:     <%= hidden_field_tag :user , @ranktable.author%>
+    23:     <%= hidden_field_tag :tableID , @ranktable.id%>
+    24:     <div class="actions">
+    25:       <%= submit_tag %>
+  
+app/views/ranktables/show.html.erb:22:in `block in _app_views_ranktables_show_html_erb__662403559930603006_70112854469040'
+app/views/ranktables/show.html.erb:17:in `_app_views_ranktables_show_html_erb__662403559930603006_70112854469040'
+Started GET "/ranktables/3" for 127.0.0.1 at 2018-09-30 01:15:12 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 01:15:17 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tMgGPkrtjJ+6GvByPwDikX9iYleS4pIlQl/QI9Sul+2NHfm4BMYjS/A1bGB56QQYPlmmzJgAJYXil/b1uxyA4g==", "options"=>{"Iron Man "=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"3", "commit"=>"Save changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 3], ["userID", 1], ["option", "Iron Man "], ["rank", 1], ["created_at", "2018-09-30 05:15:17.234462"], ["updated_at", "2018-09-30 05:15:17.234462"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 3], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-09-30 05:15:17.236932"], ["updated_at", "2018-09-30 05:15:17.236932"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 3], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-09-30 05:15:17.238756"], ["updated_at", "2018-09-30 05:15:17.238756"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 01:15:17 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mVote Load (0.2ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddAuthorId (20180930051752)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180930051752_add_author_id.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ranktables" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "authorName" varchar, "authorID" integer, "count" integer, "options" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180930051752_add_author_id.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddAuthorId (20180930051752)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "ranktables"[0m
+  ↳ db/migrate/20180930051752_add_author_id.rb:3
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180930051752_add_author_id.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ranktables" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "authorName" varchar, "authorID" integer, "count" integer, "options" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180930051752_add_author_id.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180930051752"]]
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" ORDER BY "ranktables"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ranktables"[0m
+Started GET "/" for 127.0.0.1 at 2018-09-30 01:25:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ranktables/new" for 127.0.0.1 at 2018-09-30 01:25:12 -0400
+Processing by RanktablesController#new as HTML
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `author' for #<Ranktable:0x00007f88d7661428>
+Did you mean?  authorID):
+     9:   </p>
+    10:   <p>
+    11:     <%= f.label :author %><br/>
+    12:     <%= f.text_field :author %>
+    13:   </p>
+    14:   <p>
+    15:     <%= f.label :options %><br/>
+  
+app/views/ranktables/new.html.erb:12:in `block in _app_views_ranktables_new_html_erb__3947780876881178479_70112852467280'
+app/views/ranktables/new.html.erb:1:in `_app_views_ranktables_new_html_erb__3947780876881178479_70112852467280'
+Started GET "/ranktables/new" for 127.0.0.1 at 2018-09-30 01:28:28 -0400
+Processing by RanktablesController#new as HTML
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ranktables" for 127.0.0.1 at 2018-09-30 01:28:53 -0400
+Processing by RanktablesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"10mMyE+OVrn3OQrLufA74P+WSLnlUpEYHQ2RC71IfkXunHNOAaX5bb0Wltn/Gd1pvq2MIu+wJri9xbfd0vppSg==", "ranktable"=>{"title"=>"MCU Moives", "description"=>"All the MCU Movies", "authorName"=>"Jack", "authorID"=>"1", "options"=>["Iron Man", "Hulk ", "Thor"], "count"=>"2"}, "commit"=>"Create Ranktable"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mRanktable Create (0.4ms)[0m  [1m[32mINSERT INTO "ranktables" ("title", "description", "authorName", "authorID", "count", "options", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "MCU Moives"], ["description", "All the MCU Movies"], ["authorName", "Jack"], ["authorID", 1], ["count", 2], ["options", "[\"Iron Man\", \"Hulk \", \"Thor\"]"], ["created_at", "2018-09-30 05:28:53.166694"], ["updated_at", "2018-09-30 05:28:53.166694"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:24
+Redirected to http://localhost:3000/ranktables/1
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-09-30 01:28:53 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 01:29:00 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJRHhMW6wO8eS7XdoZt2ubZWwsCGg3Vv1VoC51dB6/mBQbgCi5FvO1RkKc/ncpAw920GW4xhws91kiQxOPP89g==", "options"=>{"Iron Man"=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"Jack", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 1], ["created_at", "2018-09-30 05:29:00.379694"], ["updated_at", "2018-09-30 05:29:00.379694"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-09-30 05:29:00.382114"], ["updated_at", "2018-09-30 05:29:00.382114"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-09-30 05:29:00.384363"], ["updated_at", "2018-09-30 05:29:00.384363"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 01:29:00 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-09-30 01:29:03 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-09-30 01:30:13 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-09-30 01:30:18 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a+xjvGqOuh4cOCMVxY3qbi2pLpvHdVXLJ3IVz1c7k0lSOZw6JKUVylYXvweDZAznbJLqAM2X4muHujMZOImERg==", "options"=>{"Iron Man"=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"1", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 1], ["created_at", "2018-09-30 05:30:18.553011"], ["updated_at", "2018-09-30 05:30:18.553011"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-09-30 05:30:18.555738"], ["updated_at", "2018-09-30 05:30:18.555738"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-09-30 05:30:18.558040"], ["updated_at", "2018-09-30 05:30:18.558040"]]
+  ↳ app/controllers/votes_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-30 01:30:18 -0400
+Processing by RanktablesController#index as HTML
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:4
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]

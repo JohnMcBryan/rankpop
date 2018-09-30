@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_27_015442) do
+ActiveRecord::Schema.define(version: 2018_09_30_051752) do
 
   create_table "ranktables", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.string "author"
+    t.string "authorName"
+    t.integer "authorID"
     t.integer "count"
     t.text "options"
     t.datetime "created_at", null: false
