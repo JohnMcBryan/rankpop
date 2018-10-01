@@ -8,22 +8,14 @@
     <%= f.text_area :description, cols: 40, rows: 7 %>
   </p>
   <p>
-    <%= f.label :authorName %><br/>
-    <%= f.text_field :authorName %>
-  </p>
-  <p>
-    <%= f.label :authorID %><br/>
-    <%= f.text_field :authorID %>
-  </p>
-  <p>
     <%= f.label :options %><br/>
       <%= f.text_field :options, multiple: true %>
       <%= f.text_field :options, multiple: true %>
       <%= f.text_field :options, multiple: true %>
   </p>
-  <p>
+    <%= f.hidden_field :authorName, :value => full_name %>
+    <%= f.hidden_field :authorID, :value => current_user.id %>
     <%= f.hidden_field :count, :value => 2 %>
-  </p>
   <p>
     <%= f.submit %>
     <%= link_to "Cancel", root_path %>

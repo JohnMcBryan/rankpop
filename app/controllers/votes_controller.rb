@@ -1,5 +1,7 @@
 class VotesController < ApplicationController
 
+  before_action :authenticate
+
   def new
     @vote = Vote.new
   end

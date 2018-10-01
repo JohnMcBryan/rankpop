@@ -19,7 +19,7 @@
       <%= @text = text.tr('[]', '').tr('"','')  %>
       <%= text_field_tag "options[#{@text}" %>
     <% end %>
-    <%= hidden_field_tag :user , @ranktable.authorID%>
+    <%= hidden_field_tag :user , current_user.id%>
     <%= hidden_field_tag :tableID , @ranktable.id%>
 
     <div class="actions">
