@@ -10,6 +10,15 @@
       <li>
         <%= link_to 'New Rank Table', new_ranktable_path %>
       </li>
+      <%if current_user %>
+        <li>
+          <%= link_to 'Logout', logout_path %>
+        </li>
+      <%else %>
+        <li>
+          <%= link_to 'Login', login_path %>
+        </li>
+      <%end %>
     </ul>
   </nav>
 </aside>

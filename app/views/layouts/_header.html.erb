@@ -1,3 +1,7 @@
 <header style="padding: 5px; color: #F0F0F0; background: #237CBE;">
   <h1>RankPop</h1>
+  <%if current_user %>
+<!--    <div><%#= image_tag(current_user.picture) %> </div>-->
+    <div><%= full_name %></div>
+  <%end %>
 </header>
