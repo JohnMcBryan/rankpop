@@ -28,5 +28,6 @@
   <% end %>
   <%= link_to("Homepage", root_path) %>
   <%= link_to "Delete", ranktable_path(@ranktable), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to "Results Page", ranktable_results_path(@ranktable) %>
 
 </ranktable>

@@ -1,0 +1,6 @@
+<h1>Results for <%= @ranktable.title %></h1>
+<%@votes.each do |entry|%>
+  <%entry.each do |option,score| %>
+    <strong><%= option %></strong> (<%=score%>) </br>
+  <% end %>
+<% end %>

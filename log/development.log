@@ -6266,3 +6266,5 @@ Processing by RanktablesController#index as HTML
 Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.4ms)
 
 
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" ORDER BY "ranktables"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]

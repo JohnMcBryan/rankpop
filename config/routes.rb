@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :ranktables do
     resources :votes
+    resources :results
   end
 
   resources :votes
