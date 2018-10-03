@@ -2,13 +2,9 @@ class ResultsController < ApplicationController
   def index
     @ranktable = Ranktable.find(params[:ranktable_id])
     @votes = []
-    numOptions = @ranktable.options.split(/,/).count
-    numVotes = Vote.where(tableID: params[:ranktable_id]).count / numOptions
-    total = ((numOptions * (1 + numOptions)) / 2) * numVotes
     @ranktable.options.split(/,/).each do |text|
       option = text.tr('[]', '').tr('"','')
-      raw = Vote.where(option: option).sum( :rank )
-      score = raw
+      score = Vote.where(option: option).sum( :points )
       @votes.push([option.strip , score])
     end
   end

@@ -6,10 +6,13 @@ class VotesController < ApplicationController
     @vote = Vote.new
   end
   def create
+    @ranktable = Ranktable.find(params["tableID"])
+    total = params["options"].keys.count
     params["options"].each do |key, value|
-      Vote.create(tableID: params["tableID"], userID: params["user"], option: key, rank: value)
+      points = (total - value.to_i) + 1
+      Vote.create(tableID: params["tableID"], userID: params["user"], option: key, rank: value, points: points)
     end
-    redirect_to ranktables_path
+    redirect_to ranktable_results_path(@ranktable)
   end
 
   private
