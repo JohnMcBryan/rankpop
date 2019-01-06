@@ -1,4 +1,5 @@
 <ranktable>
+  <%# import 'components/StackedList/StackedListItem.html' as StackedListItem %>
   <header>
     <h1><%= @ranktable.title %></h1>
   </header>
@@ -14,18 +15,22 @@
     <%= @ranktable.created_at %>
   </p>
   <h3>Options</h3>
-  <%= form_tag votes_path do %>
-    <% @ranktable.options.split(/,/).each do |text| %>
-      <%= @text = text.tr('[]', '').tr('"','')  %>
-      <%= text_field_tag "options[#{@text}" %>
-    <% end %>
-    <%= hidden_field_tag :user , current_user.id%>
-    <%= hidden_field_tag :tableID , @ranktable.id%>
+  <ul>
+    <%= form_tag votes_path do %>
+      <% @ranktable.options.split(/,/).each do |text| %>
+        <li>
+          <%= @text = text.tr('[]', '').tr('"','')  %>
+          <%= text_field_tag "options[#{@text}" %>
+        </li>
+      <% end %>
+      <%= hidden_field_tag :user , current_user.id%>
+      <%= hidden_field_tag :tableID , @ranktable.id%>
 
-    <div class="actions">
-      <%= submit_tag %>
-    </div>
-  <% end %>
+      <div class="actions">
+        <%= submit_tag %>
+      </div>
+    <% end %>
+  </ul>
   <%= link_to("Homepage", root_path) %>
   <%= link_to "Delete", ranktable_path(@ranktable), method: :delete, data: { confirm: 'Are you sure?' } %>
   <%= link_to "Results Page", ranktable_results_path(@ranktable) %>

@@ -8892,3 +8892,1499 @@ Processing by ResultsController#index as HTML
 Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/ranktables/2/results" for 127.0.0.1 at 2018-10-03 09:51:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Man of Steel"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Batman Vs Superman"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Wonder Woman"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (6.6ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 850ms (Views: 831.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-03 09:51:38 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.6ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 56.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:51:41 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 44.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:52:59 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:53:11 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:56:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 938ms (Views: 906.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:56:38 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:57:49 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 283ms (Views: 279.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:58:27 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 09:58:43 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 10:13:15 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 285ms (Views: 281.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-03 10:14:22 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/johnmcbryan/Documents/rankpop/app/views/ranktables/show.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...edList/StackedListItem.html' as StackedListItem 
+...                             ^~):
+  
+app/views/ranktables/show.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-10-04 23:05:10 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (12.3ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 577ms (Views: 566.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-10-04 23:05:25 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-04 23:05:25 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-10-04 23:06:00 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-10-04 23:06:00 -0400
+Started GET "/auth/google_oauth2/callback?state=93d9826501f12a75c82c9b4520d852416728ca532202f9e7&code=4/bwBgNu_3Zn9W9SFMogCQ4kXTbId9IkLVydEGwi09RQs7GN_LB8eX16zhVtZiaTAUcO_9qUUshBWjTQgKpZAYtRM&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-10-04 23:06:05 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"93d9826501f12a75c82c9b4520d852416728ca532202f9e7", "code"=>"4/bwBgNu_3Zn9W9SFMogCQ4kXTbId9IkLVydEGwi09RQs7GN_LB8eX16zhVtZiaTAUcO_9qUUshBWjTQgKpZAYtRM", "scope"=>"https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2018-10-04 23:06:06 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.5ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (8.3ms)
+  [1m[36mRanktable Load (0.5ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.6ms)
+  Rendered me/show.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 45.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:38 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:39 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:40 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:41 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:41 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:44 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:44 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:45 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:45 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:45 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:46 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:46 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:46 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:47 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:47 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:48 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:49 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:49 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:50 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:50 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:50 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:06:50 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:07:19 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 735ms (Views: 717.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:07:21 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-04 23:07:44 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/johnmcbryan/Documents/rankpop/app/views/ranktables/show.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...edList/StackedListItem.html' as StackedListItem 
+...                             ^~):
+  
+app/views/ranktables/show.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-04 23:08:00 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-10-04 23:08:30 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9hxx+YZRmSvD4B1hROpYsYQ1VzpBDLXbJIzcHdvfrwTPyY5/yHo2/4nPgXMCA744xQ6ToUvuAnuERPrLtG24Cw==", "options"=>{"Iron Man"=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"1", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.6ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 1], ["created_at", "2018-10-05 03:08:30.544773"], ["updated_at", "2018-10-05 03:08:30.544773"], ["points", 3]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-10-05 03:08:30.547635"], ["updated_at", "2018-10-05 03:08:30.547635"], ["points", 2]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-10-05 03:08:30.550577"], ["updated_at", "2018-10-05 03:08:30.550577"], ["points", 1]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 18ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/ranktables/1/results" for 127.0.0.1 at 2018-10-04 23:08:30 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Iron Man"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Hulk "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Thor"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-04 23:08:46 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:12:27 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (15.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 342ms (Views: 331.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-10-05 15:12:38 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:12:38 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-10-05 15:12:46 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-10-05 15:12:46 -0400
+Started GET "/auth/google_oauth2/callback?state=063296879646b6f44469f539c33fcaa291f3b9ae9c5280dd&code=4/bwD8qiT5Tr3X14YNuTbEu3DnZp-7h8zFG_8u6PRXoR_u8HKJCJ29UKCgQq4DMr37SDuIRSDPS99VTPmyZO3lF9g&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-10-05 15:12:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"063296879646b6f44469f539c33fcaa291f3b9ae9c5280dd", "code"=>"4/bwD8qiT5Tr3X14YNuTbEu3DnZp-7h8zFG_8u6PRXoR_u8HKJCJ29UKCgQq4DMr37SDuIRSDPS99VTPmyZO3lF9g", "scope"=>"https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2018-10-05 15:12:49 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.5ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (9.2ms)
+  [1m[36mRanktable Load (0.6ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (2.0ms)
+  Rendered me/show.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 49.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-05 15:13:42 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-10-05 15:13:53 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zYmR64busa7tTYRP4EEv0hB6IbsbwgVM5v/m8XlMgGfOZ/6y2wW2+vkuIr9fZu/feyAHvys1cRUr+1GeTVQGHA==", "options"=>{"Iron Man"=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"1", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.5ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 1], ["created_at", "2018-10-05 19:13:53.717788"], ["updated_at", "2018-10-05 19:13:53.717788"], ["points", 3]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-10-05 19:13:53.720676"], ["updated_at", "2018-10-05 19:13:53.720676"], ["points", 2]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-10-05 19:13:53.723158"], ["updated_at", "2018-10-05 19:13:53.723158"], ["points", 1]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 17ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/ranktables/1/results" for 127.0.0.1 at 2018-10-05 15:13:53 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Iron Man"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Hulk "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Thor"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-05 15:14:03 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.6ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-14 11:00:11 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (11.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 340ms (Views: 329.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-10-14 11:00:47 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-14 11:00:47 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-10-14 11:00:52 -0400
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-10-14 11:00:52 -0400
+Started GET "/auth/google_oauth2/callback?state=14325adeb4e5e877ea26694f1ce0a52ad7f0bd43d9b5efcc&code=4/eACQgOCY2RXmlMMGEjhGYf9eyb8jAG8bKRKcpAN_FliIKzwQ4zXSEsNonFyfQjuSUsWsro3csaKLDIQjfRAQJqA&scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2018-10-14 11:00:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"14325adeb4e5e877ea26694f1ce0a52ad7f0bd43d9b5efcc", "code"=>"4/eACQgOCY2RXmlMMGEjhGYf9eyb8jAG8bKRKcpAN_FliIKzwQ4zXSEsNonFyfQjuSUsWsro3csaKLDIQjfRAQJqA", "scope"=>"https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2018-10-14 11:00:59 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.5ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (9.5ms)
+  [1m[36mRanktable Load (0.6ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.9ms)
+  Rendered me/show.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 50.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-10-14 11:01:56 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-14 11:03:14 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 50.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-10-14 11:03:36 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ta0ZziDc5hUtaqe3OqjPJheSGnE0B2e1czhgaDgHZ09OQ3aXfTfhQTkJAUeFjw8rfMg8dQTwE+y+PNcHDB/hNA==", "options"=>{"Iron Man"=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"1", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.6ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 1], ["created_at", "2018-10-14 15:03:36.110438"], ["updated_at", "2018-10-14 15:03:36.110438"], ["points", 3]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-10-14 15:03:36.113622"], ["updated_at", "2018-10-14 15:03:36.113622"], ["points", 2]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-10-14 15:03:36.116641"], ["updated_at", "2018-10-14 15:03:36.116641"], ["points", 1]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 22ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/ranktables/1/results" for 127.0.0.1 at 2018-10-14 11:03:36 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Iron Man"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Hulk "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Thor"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 44.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-10-14 11:18:14 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.5ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/votes" for 127.0.0.1 at 2018-10-14 11:18:34 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FMwIdbSPmFY+eCfSRWhtptIg0/4bB+kxrpFOzKDhNPZhs+nmPmRtRLWfI0P/Ec/2nNH1PKOqARmcmPtXTGT3A==", "options"=>{"Iron Man"=>"1", " Hulk "=>"2", " Thor"=>"3"}, "user"=>"1", "tableID"=>"1", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 1], ["created_at", "2018-10-14 15:18:34.445413"], ["updated_at", "2018-10-14 15:18:34.445413"], ["points", 3]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Hulk "], ["rank", 2], ["created_at", "2018-10-14 15:18:34.448380"], ["updated_at", "2018-10-14 15:18:34.448380"], ["points", 2]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at", "points") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", " Thor"], ["rank", 3], ["created_at", "2018-10-14 15:18:34.451075"], ["updated_at", "2018-10-14 15:18:34.451075"], ["points", 1]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:13
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 11ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/ranktables/1/results" for 127.0.0.1 at 2018-10-14 11:18:34 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Iron Man"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Hulk "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Thor"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2018-10-14 11:19:53 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (2.8ms)
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (2.0ms)
+  Rendered me/show.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 22:44:42 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (7.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 311ms (Views: 302.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-11-11 22:46:43 -0500
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-11-11 22:46:43 -0500
+Started GET "/auth/google_oauth2/callback?state=c1cc7828504145178cbfc6bc4034acd115002725ffe67466&code=4/kwB8xTw0QiLzr-yXetgdAvTM9v_ZPTSs2o605g75CETd4-o62AZ4s-YCdXuDNbvrhfvjW7CBEJLljLXvN5I-Fn0&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2018-11-11 22:46:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"c1cc7828504145178cbfc6bc4034acd115002725ffe67466", "code"=>"4/kwB8xTw0QiLzr-yXetgdAvTM9v_ZPTSs2o605g75CETd4-o62AZ4s-YCdXuDNbvrhfvjW7CBEJLljLXvN5I-Fn0", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "picture" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["picture", "https://lh6.googleusercontent.com/-WShTs_b4ymA/AAAAAAAAAAI/AAAAAAAAASE/0-fylXfJdi4/photo.jpg"], ["updated_at", "2018-11-12 03:46:49.531314"], ["id", 1]]
+  ↳ app/models/user.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 23ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2018-11-11 22:46:49 -0500
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.7ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (8.7ms)
+  [1m[36mRanktable Load (0.5ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.8ms)
+  Rendered me/show.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 42.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-11-11 22:47:33 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1/results" for 127.0.0.1 at 2018-11-11 22:48:03 -0500
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Iron Man"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Hulk "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Thor"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-11-11 22:48:31 -0500
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/new" for 127.0.0.1 at 2018-11-11 22:48:38 -0500
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-11-11 22:48:41 -0500
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/4" for 127.0.0.1 at 2018-11-11 22:49:33 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/4/results" for 127.0.0.1 at 2018-11-11 22:49:41 -0500
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"4"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Batman Begins"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " The Dark Knight "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " The Dark Knight Rises"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ranktables/4" for 127.0.0.1 at 2018-11-11 22:49:44 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 22:49:46 -0500
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2018-11-11 22:49:49 -0500
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/4" for 127.0.0.1 at 2018-11-11 22:49:52 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/4/results" for 127.0.0.1 at 2018-11-11 22:49:54 -0500
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"4"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Batman Begins"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " The Dark Knight "]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " The Dark Knight Rises"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ranktables/4" for 127.0.0.1 at 2018-11-11 22:49:55 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/2" for 127.0.0.1 at 2018-11-11 22:49:59 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/2/results" for 127.0.0.1 at 2018-11-11 22:50:00 -0500
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"2"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", "Man of Steel"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Batman Vs Superman"]]
+  ↳ app/controllers/results_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."points") FROM "votes" WHERE "votes"."option" = ?[0m  [["option", " Wonder Woman"]]
+  ↳ app/controllers/results_controller.rb:7
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 35.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-21 18:26:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 300ms (Views: 291.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-11-21 18:27:01 -0500
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-11-21 18:27:02 -0500
+Started GET "/auth/google_oauth2/callback?state=a48312ebaf35815eca50ac0e5ebb1eaad381e3eb27560077&code=4/nQAZTvwTSPUgLyuUNWF0P3wYD4EbB_FFZwqfC740e3p7CQuI83snzOMvxdo_DLbfenN7pPzVzrDeNT_sMztK4QQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for 127.0.0.1 at 2018-11-21 18:27:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"a48312ebaf35815eca50ac0e5ebb1eaad381e3eb27560077", "code"=>"4/nQAZTvwTSPUgLyuUNWF0P3wYD4EbB_FFZwqfC740e3p7CQuI83snzOMvxdo_DLbfenN7pPzVzrDeNT_sMztK4QQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "picture" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["picture", "https://lh6.googleusercontent.com/-WShTs_b4ymA/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jTzAt5TqRSgIsP3hGv6mcpFUIcjg/mo/photo.jpg"], ["updated_at", "2018-11-21 23:27:05.699341"], ["id", 1]]
+  ↳ app/models/user.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 16ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2018-11-21 18:27:05 -0500
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (18.7ms)
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.5ms)
+  Rendered me/show.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 58.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/ranktables/1" for 127.0.0.1 at 2018-11-21 18:27:07 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-06 16:03:14 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 275ms (Views: 267.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-06 16:07:07 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1447ms (Views: 1437.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ranktables" for 127.0.0.1 at 2019-01-06 16:07:11 -0500
+Processing by RanktablesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-01-06 16:07:11 -0500
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2019-01-06 16:07:11 -0500
+Started GET "/ranktables" for 127.0.0.1 at 2019-01-06 16:07:11 -0500
+Processing by RanktablesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-01-06 16:07:11 -0500
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2019-01-06 16:07:11 -0500
+Started GET "/auth/google_oauth2/callback?state=956896dda09d81b495c303c65c321ea0c7f547a5e1c07b99&code=4/ygC3aSFpV5HHZpwBL1Ia3Wuc25zjkXGX-vpj-LRi9PoDzzJQiXkaIXWFzbHavkcPGQQZN2Q-HHLXlPZNH_jyYXc&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for 127.0.0.1 at 2019-01-06 16:07:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"956896dda09d81b495c303c65c321ea0c7f547a5e1c07b99", "code"=>"4/ygC3aSFpV5HHZpwBL1Ia3Wuc25zjkXGX-vpj-LRi9PoDzzJQiXkaIXWFzbHavkcPGQQZN2Q-HHLXlPZNH_jyYXc", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "picture" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["picture", "https://lh6.googleusercontent.com/-WShTs_b4ymA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcZvMa4cEocqrlZ1UO9bA-kCpjNOxQ/mo/photo.jpg"], ["updated_at", "2019-01-06 21:07:15.128026"], ["id", 1]]
+  ↳ app/models/user.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 25ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2019-01-06 16:07:15 -0500
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (15.9ms)
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (2.0ms)
+  Rendered me/show.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 93.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/ranktables/3" for 127.0.0.1 at 2019-01-06 16:07:19 -0500
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:10
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
