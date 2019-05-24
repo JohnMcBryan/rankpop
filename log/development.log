@@ -8892,3 +8892,45 @@ Processing by ResultsController#index as HTML
 Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.7ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateOptions (20190524145807)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190524145807_create_options.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "options" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "tableID" integer, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190524145807_create_options.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190524145807"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to RemoveOptionsFromRanktables (20190524145847)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aranktables" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "authorName" varchar DEFAULT NULL, "authorID" integer DEFAULT NULL, "count" integer DEFAULT NULL, "options" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190524145847_remove_options_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aranktables" ("id","title","description","authorName","authorID","count","options","created_at","updated_at")
+                     SELECT "id","title","description","authorName","authorID","count","options","created_at","updated_at" FROM "ranktables"[0m
+  ↳ db/migrate/20190524145847_remove_options_from_ranktables.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "ranktables"[0m
+  ↳ db/migrate/20190524145847_remove_options_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ranktables" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "authorName" varchar DEFAULT NULL, "authorID" integer DEFAULT NULL, "count" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190524145847_remove_options_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ranktables" ("id","title","description","authorName","authorID","count","created_at","updated_at")
+                     SELECT "id","title","description","authorName","authorID","count","created_at","updated_at" FROM "aranktables"[0m
+  ↳ db/migrate/20190524145847_remove_options_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aranktables"[0m
+  ↳ db/migrate/20190524145847_remove_options_from_ranktables.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190524145847"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9

@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_03_130525) do
+ActiveRecord::Schema.define(version: 2019_05_24_145847) do
+
+  create_table "options", force: :cascade do |t|
+    t.integer "tableID"
+    t.string "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ranktables", force: :cascade do |t|
     t.string "title"
@@ -18,7 +25,6 @@ ActiveRecord::Schema.define(version: 2018_10_03_130525) do
     t.string "authorName"
     t.integer "authorID"
     t.integer "count"
-    t.text "options"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -7,12 +7,11 @@
     <%= f.label :description %><br/>
     <%= f.text_area :description, cols: 40, rows: 7 %>
   </p>
-  <p>
-    <%= f.label :options %><br/>
-      <%= f.text_field :options, multiple: true %>
-      <%= f.text_field :options, multiple: true %>
-      <%= f.text_field :options, multiple: true %>
-  </p>
+  <%= f.fields_for :option do |option_form| %>
+    <p>
+      Task: <%= option_form.text_field :value %>
+    </p>
+  <% end %>
     <%= f.hidden_field :authorName, :value => full_name %>
     <%= f.hidden_field :authorID, :value => current_user.id %>
     <%= f.hidden_field :count, :value => 2 %>

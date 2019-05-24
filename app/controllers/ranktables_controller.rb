@@ -2,7 +2,6 @@ class RanktablesController < ApplicationController
 
   # http://vicfriedman.github.io/blog/2015/07/18/create-multiple-objects-from-single-form-in-rails/
   before_action :authenticate
-
   def index
     @ranktables = Ranktable.all
   end
