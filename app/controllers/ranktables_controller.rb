@@ -18,12 +18,18 @@ class RanktablesController < ApplicationController
     redirect_to @ranktable
   end
   def new
-    @ranktable = Ranktable.new
+    @ranktable_params = Ranktable.new
   end
   def create
-    @ranktable = Ranktable.new(ranktable_params)
-    @ranktable.save
-    redirect_to @ranktable
+    @ranktable_params = Ranktable.new(ranktable_params)
+    puts "options:"
+    # @ranktable_params.options.split(/,/).each do |text|
+    #   option = text.tr('[]', '').tr('"','').
+    #   puts option.strip
+    # end
+    redirect_to index
+    # @ranktable_params.save
+    # redirect_to @ranktable_params
   end
   def destroy
     @ranktable = Ranktable.find(params[:id])

@@ -1,4 +1,4 @@
-<%= form_for(@ranktable) do |f| %>
+<%= form_for(@ranktable_params) do |f| %>
   <p>
     <%= f.label :title %><br/>
     <%= f.text_field :title, autofocus: true %>
@@ -8,10 +8,11 @@
     <%= f.text_area :description, cols: 40, rows: 7 %>
   </p>
   <p>
-    <%= f.label :options %><br/>
-      <%= f.text_field :options, multiple: true %>
-      <%= f.text_field :options, multiple: true %>
-      <%= f.text_field :options, multiple: true %>
+    <%= hidden_field_tag :options%>
+      <%= text_field :option, multiple: true %>
+      <%= text_field :option, multiple: true %>
+      <%= text_field :option, multiple: true %>
+
   </p>
     <%= f.hidden_field :authorName, :value => full_name %>
     <%= f.hidden_field :authorID, :value => current_user.id %>

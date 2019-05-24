@@ -17,12 +17,12 @@
   <h3>Options</h3>
   <ul>
     <%= form_tag votes_path do %>
-      <% @ranktable.options.split(/,/).each do |text| %>
-        <li>
-          <%= @text = text.tr('[]', '').tr('"','')  %>
-          <%= text_field_tag "options[#{@text}" %>
-        </li>
-      <% end %>
+      <%# @ranktable.options.split(/,/).each do |text| %>
+<!--        <li>-->
+          <%#= @text = text.tr('[]', '').tr('"','')  %>
+          <%#= text_field_tag "options[#{@text}" %>
+<!--        </li>-->
+      <%# end %>
       <%= hidden_field_tag :user , current_user.id%>
       <%= hidden_field_tag :tableID , @ranktable.id%>
 
