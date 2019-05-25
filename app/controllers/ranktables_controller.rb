@@ -7,6 +7,7 @@ class RanktablesController < ApplicationController
   end
   def show
     @ranktable = Ranktable.find(params[:id])
+    @options = @ranktable.option
   end
   def edit
     @ranktable = Ranktable.find(params[:id])
@@ -18,7 +19,6 @@ class RanktablesController < ApplicationController
   end
   def new
     @ranktable = Ranktable.new
-    2.times {@ranktable.option.build}
   end
   def create
     @ranktable = Ranktable.create(ranktable_params)
@@ -27,10 +27,6 @@ class RanktablesController < ApplicationController
     else
       render 'new'
     end
-    # @ranktable = Ranktable.new(title: ranktable[:title],description: ranktable[:description],authorName: ranktable[:authorName],authorID: ranktable[:authorID])
-    # @ranktable.save
-    # @option = Option.new(tableID: @ranktable.id,value: options[:value])
-    # @option.save
   end
   def destroy
     @ranktable = Ranktable.find(params[:id])

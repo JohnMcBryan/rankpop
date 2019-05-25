@@ -7,13 +7,10 @@
     <%= f.label :description %><br/>
     <%= f.text_area :description, cols: 40, rows: 7 %>
   </p>
-  <ul>
-    <%= f.nested_fields_for :option do |option_form| %>
-      <li>
-        Option: <%= option_form.text_field :value %>
-      </li>
+    <%= f.fields_for :option do |option_form| %>
+      <%=render 'option_fields',f: option_form %>
     <% end %>
-  </ul>
+    <%= link_to_add_fields "Add Option", f, :option %>
     <%= f.hidden_field :authorName, :value => full_name %>
     <%= f.hidden_field :authorID, :value => current_user.id %>
   <p>

@@ -16,3 +16,6 @@
 //= require_tree .
 //= require chartkick
 //= require highcharts
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
