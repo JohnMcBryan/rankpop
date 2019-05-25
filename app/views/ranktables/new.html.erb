@@ -7,14 +7,15 @@
     <%= f.label :description %><br/>
     <%= f.text_area :description, cols: 40, rows: 7 %>
   </p>
-  <%= f.fields_for :option do |option_form| %>
-    <p>
-      Task: <%= option_form.text_field :value %>
-    </p>
-  <% end %>
+  <ul>
+    <%= f.nested_fields_for :option do |option_form| %>
+      <li>
+        Option: <%= option_form.text_field :value %>
+      </li>
+    <% end %>
+  </ul>
     <%= f.hidden_field :authorName, :value => full_name %>
     <%= f.hidden_field :authorID, :value => current_user.id %>
-    <%= f.hidden_field :count, :value => 2 %>
   <p>
     <%= f.submit %>
     <%= link_to "Cancel", root_path %>

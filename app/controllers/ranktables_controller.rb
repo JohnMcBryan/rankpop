@@ -18,11 +18,19 @@ class RanktablesController < ApplicationController
   end
   def new
     @ranktable = Ranktable.new
+    2.times {@ranktable.option.build}
   end
   def create
-    @ranktable = Ranktable.new(ranktable_params)
-    @ranktable.save
-    redirect_to @ranktable
+    @ranktable = Ranktable.create(ranktable_params)
+    if @ranktable.save
+      redirect_to @ranktable
+    else
+      render 'new'
+    end
+    # @ranktable = Ranktable.new(title: ranktable[:title],description: ranktable[:description],authorName: ranktable[:authorName],authorID: ranktable[:authorID])
+    # @ranktable.save
+    # @option = Option.new(tableID: @ranktable.id,value: options[:value])
+    # @option.save
   end
   def destroy
     @ranktable = Ranktable.find(params[:id])

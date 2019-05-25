@@ -8934,3 +8934,204 @@ Migrating to RemoveOptionsFromRanktables (20190524145847)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveCountFromRanktables (20190524225359)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aranktables" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "authorName" varchar DEFAULT NULL, "authorID" integer DEFAULT NULL, "count" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aranktables" ("id","title","description","authorName","authorID","count","created_at","updated_at")
+                     SELECT "id","title","description","authorName","authorID","count","created_at","updated_at" FROM "ranktables"[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "ranktables"[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ranktables" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "authorName" varchar DEFAULT NULL, "authorID" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ranktables" ("id","title","description","authorName","authorID","created_at","updated_at")
+                     SELECT "id","title","description","authorName","authorID","created_at","updated_at" FROM "aranktables"[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aranktables"[0m
+  ↳ db/migrate/20190524225359_remove_count_from_ranktables.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190524225359"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ranktables"[0m
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRanktable Load (0.6ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT  "options".* FROM "options" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT  "options".* FROM "options" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT  "options".* FROM "options" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT  "options".* FROM "options" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mRanktable Load (0.3ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeColumnName (20190525150328)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeColumnName (20190525150328)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aoptions" ("id" integer NOT NULL PRIMARY KEY, "ranktable_id" integer DEFAULT NULL, "value" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aoptions" ("id","ranktable_id","value","created_at","updated_at")
+                     SELECT "id","tableID","value","created_at","updated_at" FROM "options"[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "options"[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "options" ("id" integer NOT NULL PRIMARY KEY, "ranktable_id" integer DEFAULT NULL, "value" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "options" ("id","ranktable_id","value","created_at","updated_at")
+                     SELECT "id","ranktable_id","value","created_at","updated_at" FROM "aoptions"[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aoptions"[0m
+  ↳ db/migrate/20190525150328_change_column_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190525150328"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/ranktables/new" for ::1 at 2019-05-25 11:13:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-25 11:13:56 -0400
+Started GET "/auth/google_oauth2" for ::1 at 2019-05-25 11:13:56 -0400
+Started GET "/auth/google_oauth2/callback?state=7cd31129fba198fbd1058794706d0945f58e9889662bbd0a&code=4%2FVQGUh6rOYWX4KwTq3JeYtqikrxEiR4ACMbJTeZbqlkDvdjmp2Sq4wgkShdpGoPipoKKT72vBypwkyLU532FQ4CM&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile" for ::1 at 2019-05-25 11:13:59 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"7cd31129fba198fbd1058794706d0945f58e9889662bbd0a", "code"=>"4/VQGUh6rOYWX4KwTq3JeYtqikrxEiR4ACMbJTeZbqlkDvdjmp2Sq4wgkShdpGoPipoKKT72vBypwkyLU532FQ4CM", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "107187710157053177778"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "picture" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["picture", "https://lh6.googleusercontent.com/-WShTs_b4ymA/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reZaemcCwQlT_XVQvGfLbGaxA6-9A/mo/photo.jpg"], ["updated_at", "2019-05-25 15:13:59.682668"], ["id", 1]]
+  ↳ app/models/user.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 22ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/me" for ::1 at 2019-05-25 11:13:59 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (6.8ms)
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.2ms)
+  Rendered me/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 833ms (Views: 824.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-05-25 11:14:03 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (151.1ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `nested_fields_for' for #<ActionView::Helpers::FormBuilder:0x00007fb828a90028>):
+     8:     <%= f.text_area :description, cols: 40, rows: 7 %>
+     9:   </p>
+    10:   <ul>
+    11:     <%= f.nested_fields_for :option do |option_form| %>
+    12:       <li>
+    13:         Option: <%= option_form.text_field :value %>
+    14:       </li>
+  
+app/views/ranktables/new.html.erb:11:in `block in _app_views_ranktables_new_html_erb___2395643715570289929_70214474410140'
+app/views/ranktables/new.html.erb:1:in `_app_views_ranktables_new_html_erb___2395643715570289929_70214474410140'
+Started GET "/ranktables/new" for ::1 at 2019-05-25 11:16:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 815ms (Views: 770.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/ranktables" for ::1 at 2019-05-25 11:17:20 -0400
+Processing by RanktablesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m9cfgVzuGlCiJbYTK+/kzv9Bcj8wFkYK5wzBVNJT0SQDlGDJCfkHAel80/SfMxaUHT/TQZpPbQqdTOo1BcEpHQ==", "ranktable"=>{"title"=>"Title", "description"=>"Description", "option_attributes"=>{"0"=>{"value"=>"Option1"}, "1"=>{"value"=>"Option2"}}, "authorName"=>"John McBryan", "authorID"=>"1"}, "commit"=>"Create Ranktable"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mRanktable Create (0.4ms)[0m  [1m[32mINSERT INTO "ranktables" ("title", "description", "authorName", "authorID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Title"], ["description", "Description"], ["authorName", "John McBryan"], ["authorID", 1], ["created_at", "2019-05-25 15:17:20.648036"], ["updated_at", "2019-05-25 15:17:20.648036"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 20], ["value", "Option1"], ["created_at", "2019-05-25 15:17:20.649552"], ["updated_at", "2019-05-25 15:17:20.649552"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 20], ["value", "Option2"], ["created_at", "2019-05-25 15:17:20.650383"], ["updated_at", "2019-05-25 15:17:20.650383"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:25
+Redirected to http://localhost:3000/ranktables/20
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/ranktables/20" for ::1 at 2019-05-25 11:17:20 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  Rendered ranktables/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mOption Load (0.7ms)[0m  [1m[34mSELECT  "options".* FROM "options" LIMIT ?[0m  [["LIMIT", 11]]

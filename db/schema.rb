@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_24_145847) do
+ActiveRecord::Schema.define(version: 2019_05_25_150328) do
 
   create_table "options", force: :cascade do |t|
-    t.integer "tableID"
+    t.integer "ranktable_id"
     t.string "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 2019_05_24_145847) do
     t.string "description"
     t.string "authorName"
     t.integer "authorID"
-    t.integer "count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
