@@ -15,12 +15,14 @@
   </p>
   <h3>Options</h3>
   <%= form_tag votes_path do %>
-    <% @options.each do |text| %>
-      <ul>
-        <%= text.value %>
-        <%= text_field_tag text.value %>
-      </ul>
-    <% end %>
+    <div id="options" class = "list-group">
+      <% @options.each do |text| %>
+        <ul>
+          <%= text.value %>
+          <%= text_field_tag text.value %>
+        </ul>
+      <% end %>
+    </div>
     <%= hidden_field_tag :user , current_user.id%>
     <%= hidden_field_tag :tableID , @ranktable.id%>
 
