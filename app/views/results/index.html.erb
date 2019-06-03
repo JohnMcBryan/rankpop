@@ -1,9 +1,6 @@
 <h1>Results for <%= @ranktable.title %></h1>
-<%@votes.each do |option,score|%>
-  <strong><%= option %></strong> (<%=score%>) </br>
-  <%#entry.each do |option,score| %>
-<!--    <strong><%#= option %></strong> (<%#=score%>) </br>-->
-  <%# end %>
+<%@ranktable.option.each do |option| %>
+  <strong><%= option.value %></strong> </br>
 <% end %>
-<%= pie_chart @votes %>
+<%= pie_chart @votes.group(:option).sum(:rank) %>
 <%= link_to "Ranktable Page", ranktable_path(@ranktable) %>
