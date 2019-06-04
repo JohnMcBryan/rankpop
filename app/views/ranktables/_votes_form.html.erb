@@ -1,0 +1,18 @@
+<%= form_tag votes_path do %>
+  <div id="options" class = "list-group">
+    <% @options.each do |text| %>
+      <ul id = '<%=text.value%>' class = "option_item">
+        <%if text.picture.attached? %>
+          <image style="width:100px;" src="<%= url_for(text.picture)%>"></image>
+        <%end %>
+        <div class="option_text"><%= text.value %></div>
+      </ul>
+    <% end %>
+  </div>
+  <%= hidden_field_tag :user , current_user.id%>
+  <%= hidden_field_tag :tableID , @ranktable.id%>
+  <%= hidden_field_tag :array%>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>

@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+$lightBlue: #F0F8FF;
+
+.option_item{
+  background: $lightBlue;
+  padding: 10px;
+  cursor: grab;
+}
+.option_item:active{
+  cursor: grabbing;
+}
+
+.option_text{
+  display: inline-block;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+
+}
