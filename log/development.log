@@ -14475,3 +14475,1248 @@ Processing by ResultsController#index as HTML
 Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.3ms)
 
 
+  [1m[36mRanktable Load (0.9ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  [1m[36mRanktable Destroy (0.7ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 2]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 3]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 4]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 5]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 6]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 7]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 8]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 9]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 10]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 11]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 12]]
+  [1m[36mRanktable Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 13]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 14]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 15]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 16]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 17]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 18]]
+  [1m[36mRanktable Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 19]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 20]]
+  [1m[36mOption Destroy (0.2ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 1]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 2]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 21]]
+  [1m[36mOption Destroy (0.1ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 3]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 4]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 5]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 6]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 22]]
+  [1m[36mOption Destroy (0.2ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 7]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 8]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 9]]
+  [1m[36mOption Destroy (0.1ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 10]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 23]]
+  [1m[36mOption Destroy (0.1ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 11]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 12]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 13]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 14]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 15]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 16]]
+  [1m[36mRanktable Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ranktables" WHERE "ranktables"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVote Load (0.4ms)[0m  [1m[34mSELECT "votes".* FROM "votes"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.3ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 127]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 128]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 129]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 130]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 131]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 132]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 133]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 134]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 135]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 136]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 137]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 138]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 139]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 140]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 141]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 142]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/ranktables" for ::1 at 2019-06-03 21:38:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnmcbryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 574ms (Views: 551.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:00 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (1.1ms)
+  Rendered ranktables/new.html.erb within layouts/application (36.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 72.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:18 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.6ms)
+  Rendered ranktables/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:20 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:21 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.6ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:21 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:21 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:22 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.7ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:22 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:22 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:23 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/new" for ::1 at 2019-06-03 21:39:24 -0400
+Processing by RanktablesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/new.html.erb within layouts/application
+  Rendered ranktables/_option_fields.html.erb (0.5ms)
+  Rendered ranktables/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ranktables" for ::1 at 2019-06-03 21:40:26 -0400
+Processing by RanktablesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YpPWjORUg+D8Ouq3h1/Y5O+4h8B0MngCcSNbceb7RxXpZy5UaOvyWZlCFqvgDph6O/sVN0ht+QrYNoGmzuULQA==", "ranktable"=>{"title"=>"Marvel Movies", "description"=>"A ranking of all the marvel movies", "option_attributes"=>{"1559612365471"=>{"value"=>"Spiderman: Homecoming", "_destroy"=>"false"}, "1559612379601"=>{"value"=>"Civil War", "_destroy"=>"false"}, "1559612380936"=>{"value"=>"Iron Man", "_destroy"=>"false"}, "1559612397184"=>{"value"=>"Infinity War", "_destroy"=>"false"}, "1559612401034"=>{"value"=>"Endgame", "_destroy"=>"false"}, "1559612405112"=>{"value"=>"Guardians of the Galaxy", "_destroy"=>"false"}, "1559612417296"=>{"value"=>"Ant Man", "_destroy"=>"false"}, "1559612422187"=>{"value"=>"Thor ", "_destroy"=>"false"}}, "authorName"=>"John McBryan", "authorID"=>"1"}, "commit"=>"Create Ranktable"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mRanktable Create (0.5ms)[0m  [1m[32mINSERT INTO "ranktables" ("title", "description", "authorName", "authorID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Marvel Movies"], ["description", "A ranking of all the marvel movies"], ["authorName", "John McBryan"], ["authorID", 1], ["created_at", "2019-06-04 01:40:26.334453"], ["updated_at", "2019-06-04 01:40:26.334453"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Spiderman: Homecoming"], ["created_at", "2019-06-04 01:40:26.336038"], ["updated_at", "2019-06-04 01:40:26.336038"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Civil War"], ["created_at", "2019-06-04 01:40:26.336797"], ["updated_at", "2019-06-04 01:40:26.336797"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Iron Man"], ["created_at", "2019-06-04 01:40:26.337360"], ["updated_at", "2019-06-04 01:40:26.337360"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Infinity War"], ["created_at", "2019-06-04 01:40:26.337880"], ["updated_at", "2019-06-04 01:40:26.337880"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Endgame"], ["created_at", "2019-06-04 01:40:26.338398"], ["updated_at", "2019-06-04 01:40:26.338398"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Guardians of the Galaxy"], ["created_at", "2019-06-04 01:40:26.338922"], ["updated_at", "2019-06-04 01:40:26.338922"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Ant Man"], ["created_at", "2019-06-04 01:40:26.339444"], ["updated_at", "2019-06-04 01:40:26.339444"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("ranktable_id", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["ranktable_id", 1], ["value", "Thor "], ["created_at", "2019-06-04 01:40:26.339974"], ["updated_at", "2019-06-04 01:40:26.339974"]]
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ranktables_controller.rb:25
+Redirected to http://localhost:3000/ranktables/1
+Completed 302 Found in 18ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/ranktables/1" for ::1 at 2019-06-03 21:40:26 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/views/ranktables/show.html.erb:19
+  Rendered ranktables/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/votes" for ::1 at 2019-06-03 21:40:42 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iUA3DRyagXtzy3Vhnqbu2q7oWkVTSO8SqtPMSZA3iZYCtM/VkCXwwhaziX35965EeqvIsm8XbhoDxhaeuCnFww==", "user"=>"1", "tableID"=>"1", "array"=>"Spiderman: Homecoming,Infinity War,Civil War,Endgame,Guardians of the Galaxy,Iron Man,Ant Man,Thor ", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/controllers/votes_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Spiderman: Homecoming"], ["rank", 7], ["created_at", "2019-06-04 01:40:42.119895"], ["updated_at", "2019-06-04 01:40:42.119895"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Infinity War"], ["rank", 6], ["created_at", "2019-06-04 01:40:42.122657"], ["updated_at", "2019-06-04 01:40:42.122657"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Civil War"], ["rank", 5], ["created_at", "2019-06-04 01:40:42.124839"], ["updated_at", "2019-06-04 01:40:42.124839"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.4ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Endgame"], ["rank", 4], ["created_at", "2019-06-04 01:40:42.127029"], ["updated_at", "2019-06-04 01:40:42.127029"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Guardians of the Galaxy"], ["rank", 3], ["created_at", "2019-06-04 01:40:42.129036"], ["updated_at", "2019-06-04 01:40:42.129036"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 2], ["created_at", "2019-06-04 01:40:42.130990"], ["updated_at", "2019-06-04 01:40:42.130990"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Ant Man"], ["rank", 1], ["created_at", "2019-06-04 01:40:42.133130"], ["updated_at", "2019-06-04 01:40:42.133130"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Thor "], ["rank", 0], ["created_at", "2019-06-04 01:40:42.135115"], ["updated_at", "2019-06-04 01:40:42.135115"]]
+  ↳ app/controllers/votes_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:17
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 27ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/ranktables/1/results" for ::1 at 2019-06-03 21:40:42 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."rank") AS sum_rank, "votes"."option" AS votes_option FROM "votes" WHERE "votes"."tableID" = ? GROUP BY "votes"."option"[0m  [["tableID", 1]]
+  ↳ app/controllers/results_controller.rb:4
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:41:59 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/me" for ::1 at 2019-06-03 21:42:00 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 1]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (1.3ms)
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 1]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.2ms)
+  Rendered me/show.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:42:11 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for ::1 at 2019-06-03 21:45:54 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/views/ranktables/show.html.erb:19
+  Rendered ranktables/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 48.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/votes" for ::1 at 2019-06-03 21:46:04 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a2ZVnKE1+yDqrpgO6iW+ktHyIVLg72NeMtw1VQhdp6y6vHLxoaVTOXoyxXDwmd/0SkRnCzqv+yamCC2kmRrHjg==", "user"=>"1", "tableID"=>"1", "array"=>"Infinity War,Spiderman: Homecoming,Civil War,Iron Man,Endgame,Guardians of the Galaxy,Ant Man,Thor ", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `join' for {:userID=>1, :tableID=>"1"}:Hash):
+  
+app/controllers/votes_controller.rb:9:in `create'
+Started POST "/votes" for ::1 at 2019-06-03 21:46:41 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XHHslTCV/PpJAb+MjivuJnahaJcVq5r6mbFw0pQeFHjXhRRNvCqNQyx5Q5Dpeq64ouL6YCn0G/IwpKoFvABYLQ==", "user"=>"1", "tableID"=>"1", "array"=>"Infinity War,Spiderman: Homecoming,Civil War,Iron Man,Endgame,Guardians of the Galaxy,Ant Man,Thor ", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."userID" = ? AND "votes"."tableID" = ?[0m  [["userID", 1], ["tableID", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 143]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 144]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 145]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 146]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 147]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 148]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 149]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 150]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/controllers/votes_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Infinity War"], ["rank", 7], ["created_at", "2019-06-04 01:46:41.415442"], ["updated_at", "2019-06-04 01:46:41.415442"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Spiderman: Homecoming"], ["rank", 6], ["created_at", "2019-06-04 01:46:41.417553"], ["updated_at", "2019-06-04 01:46:41.417553"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Civil War"], ["rank", 5], ["created_at", "2019-06-04 01:46:41.419493"], ["updated_at", "2019-06-04 01:46:41.419493"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 4], ["created_at", "2019-06-04 01:46:41.421303"], ["updated_at", "2019-06-04 01:46:41.421303"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Endgame"], ["rank", 3], ["created_at", "2019-06-04 01:46:41.423009"], ["updated_at", "2019-06-04 01:46:41.423009"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Guardians of the Galaxy"], ["rank", 2], ["created_at", "2019-06-04 01:46:41.424796"], ["updated_at", "2019-06-04 01:46:41.424796"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Ant Man"], ["rank", 1], ["created_at", "2019-06-04 01:46:41.426513"], ["updated_at", "2019-06-04 01:46:41.426513"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Thor "], ["rank", 0], ["created_at", "2019-06-04 01:46:41.428236"], ["updated_at", "2019-06-04 01:46:41.428236"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 51ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/ranktables/1/results" for ::1 at 2019-06-03 21:46:41 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("votes"."rank") AS sum_rank, "votes"."option" AS votes_option FROM "votes" WHERE "votes"."tableID" = ? GROUP BY "votes"."option"[0m  [["tableID", 1]]
+  ↳ app/controllers/results_controller.rb:4
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:46:47 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for ::1 at 2019-06-03 21:46:48 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/views/ranktables/show.html.erb:19
+  Rendered ranktables/show.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/votes" for ::1 at 2019-06-03 21:46:55 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TJEfCf3Nt6HTmdjSY3afHY+lBuFLC3kgVAEr0ereTlqdSzhk/V0fuEMFhax5yv57FBNAuJFL4VjA1TMge5kueA==", "user"=>"1", "tableID"=>"1", "array"=>"Thor ,Spiderman: Homecoming,Civil War,Iron Man,Infinity War,Endgame,Guardians of the Galaxy,Ant Man", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."userID" = ? AND "votes"."tableID" = ?[0m  [["userID", 1], ["tableID", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.3ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 151]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 152]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.3ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 153]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 154]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 155]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 156]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 157]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 158]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/controllers/votes_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Thor "], ["rank", 7], ["created_at", "2019-06-04 01:46:55.223291"], ["updated_at", "2019-06-04 01:46:55.223291"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Spiderman: Homecoming"], ["rank", 6], ["created_at", "2019-06-04 01:46:55.225595"], ["updated_at", "2019-06-04 01:46:55.225595"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Civil War"], ["rank", 5], ["created_at", "2019-06-04 01:46:55.227545"], ["updated_at", "2019-06-04 01:46:55.227545"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Iron Man"], ["rank", 4], ["created_at", "2019-06-04 01:46:55.229344"], ["updated_at", "2019-06-04 01:46:55.229344"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Infinity War"], ["rank", 3], ["created_at", "2019-06-04 01:46:55.231025"], ["updated_at", "2019-06-04 01:46:55.231025"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Endgame"], ["rank", 2], ["created_at", "2019-06-04 01:46:55.232841"], ["updated_at", "2019-06-04 01:46:55.232841"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Guardians of the Galaxy"], ["rank", 1], ["created_at", "2019-06-04 01:46:55.234829"], ["updated_at", "2019-06-04 01:46:55.234829"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 1], ["option", "Ant Man"], ["rank", 0], ["created_at", "2019-06-04 01:46:55.236687"], ["updated_at", "2019-06-04 01:46:55.236687"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 32ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/ranktables/1/results" for ::1 at 2019-06-03 21:46:55 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."rank") AS sum_rank, "votes"."option" AS votes_option FROM "votes" WHERE "votes"."tableID" = ? GROUP BY "votes"."option"[0m  [["tableID", 1]]
+  ↳ app/controllers/results_controller.rb:4
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for ::1 at 2019-06-03 21:47:01 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-03 21:47:01 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-03 21:47:03 -0400
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-03 21:47:03 -0400
+Started GET "/auth/google_oauth2/callback?state=37212fe879de62881ecf44aef5b9280a2795cb58746aebd9&code=4%2FXQHOL-3E1_KsOVf5apPcrkScKEhi0T23vLnhIlo1rFb42wD0cHEmO6nj3ogtgWAcZZnRLSBvEgY0xs28jl_18Po&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile" for ::1 at 2019-06-03 21:47:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"37212fe879de62881ecf44aef5b9280a2795cb58746aebd9", "code"=>"4/XQHOL-3E1_KsOVf5apPcrkScKEhi0T23vLnhIlo1rFb42wD0cHEmO6nj3ogtgWAcZZnRLSBvEgY0xs28jl_18Po", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "106891752957576586319"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:10
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "picture" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["picture", "https://lh4.googleusercontent.com/-H4RaiDoYCak/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcgx-zLbE7kr1eDjHK83uvIjWbpYA/mo/photo.jpg"], ["updated_at", "2019-06-04 01:47:11.186787"], ["id", 2]]
+  ↳ app/models/user.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:10
+Redirected to http://localhost:3000/me
+Completed 302 Found in 5ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/me" for ::1 at 2019-06-03 21:47:11 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 2]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (1.0ms)
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 2]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.0ms)
+  Rendered me/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:47:13 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ranktables/1" for ::1 at 2019-06-03 21:47:14 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/views/ranktables/show.html.erb:19
+  Rendered ranktables/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/votes" for ::1 at 2019-06-03 21:47:18 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KheSNTCY8co+ISfFBnQ0BHlNcr7SuQ6v2WTElwf/wFD7zbVYMAhZ0669erscyFVi4vs05wj5ltdNsNxmlrigcg==", "user"=>"2", "tableID"=>"1", "array"=>"", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."userID" = ? AND "votes"."tableID" = ?[0m  [["userID", 2], ["tableID", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/controllers/votes_controller.rb:14
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/1/results" for ::1 at 2019-06-03 21:47:18 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."rank") AS sum_rank, "votes"."option" AS votes_option FROM "votes" WHERE "votes"."tableID" = ? GROUP BY "votes"."option"[0m  [["tableID", 1]]
+  ↳ app/controllers/results_controller.rb:4
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:47:25 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/me" for ::1 at 2019-06-03 21:47:28 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 2]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (1.4ms)
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 2]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.4ms)
+  Rendered me/show.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:47:29 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ranktables/1" for ::1 at 2019-06-03 21:47:30 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/views/ranktables/show.html.erb:19
+  Rendered ranktables/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/votes" for ::1 at 2019-06-03 21:47:39 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jF/R7FO1KkiR5GWHfm1+bOQoOY3WLboMYV/ynjJa8ShdhfaBUyWCUQF4OPlk0R8Kf55/1AxtInT1i+pvox2RCg==", "user"=>"2", "tableID"=>"1", "array"=>"Guardians of the Galaxy,Spiderman: Homecoming,Civil War,Iron Man,Infinity War,Endgame,Ant Man,Thor ", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."userID" = ? AND "votes"."tableID" = ?[0m  [["userID", 2], ["tableID", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/controllers/votes_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Guardians of the Galaxy"], ["rank", 7], ["created_at", "2019-06-04 01:47:39.723891"], ["updated_at", "2019-06-04 01:47:39.723891"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Spiderman: Homecoming"], ["rank", 6], ["created_at", "2019-06-04 01:47:39.726579"], ["updated_at", "2019-06-04 01:47:39.726579"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Civil War"], ["rank", 5], ["created_at", "2019-06-04 01:47:39.728971"], ["updated_at", "2019-06-04 01:47:39.728971"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Iron Man"], ["rank", 4], ["created_at", "2019-06-04 01:47:39.731107"], ["updated_at", "2019-06-04 01:47:39.731107"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Infinity War"], ["rank", 3], ["created_at", "2019-06-04 01:47:39.733053"], ["updated_at", "2019-06-04 01:47:39.733053"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Endgame"], ["rank", 2], ["created_at", "2019-06-04 01:47:39.734940"], ["updated_at", "2019-06-04 01:47:39.734940"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Ant Man"], ["rank", 1], ["created_at", "2019-06-04 01:47:39.736873"], ["updated_at", "2019-06-04 01:47:39.736873"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Thor "], ["rank", 0], ["created_at", "2019-06-04 01:47:39.738902"], ["updated_at", "2019-06-04 01:47:39.738902"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 20ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/ranktables/1/results" for ::1 at 2019-06-03 21:47:39 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."rank") AS sum_rank, "votes"."option" AS votes_option FROM "votes" WHERE "votes"."tableID" = ? GROUP BY "votes"."option"[0m  [["tableID", 1]]
+  ↳ app/controllers/results_controller.rb:4
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables" for ::1 at 2019-06-03 21:47:56 -0400
+Processing by RanktablesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering ranktables/index.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables"[0m
+  ↳ app/views/ranktables/index.html.erb:3
+  Rendered ranktables/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/me" for ::1 at 2019-06-03 21:47:58 -0400
+Processing by MeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering me/show.html.erb within layouts/application
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."authorID" = ?[0m  [["authorID", 2]]
+  ↳ app/views/me/_myRanktables.html.erb:2
+  Rendered me/_myRanktables.html.erb (1.0ms)
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT "ranktables".* FROM "ranktables" WHERE "ranktables"."id" IN (SELECT "votes"."tableID" FROM "votes" WHERE "votes"."userID" = ?)[0m  [["userID", 2]]
+  ↳ app/views/me/_myVotes.html.erb:2
+  Rendered me/_myVotes.html.erb (1.5ms)
+  Rendered me/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ranktables/1" for ::1 at 2019-06-03 21:48:00 -0400
+Processing by RanktablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ranktables_controller.rb:9
+  Rendering ranktables/show.html.erb within layouts/application
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/views/ranktables/show.html.erb:19
+  Rendered ranktables/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/votes" for ::1 at 2019-06-03 21:48:04 -0400
+Processing by VotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YLXNkrCRqu7opI7962K3RoEAHZMEgctmFvYYbrK9CWexb+r/sAEC93g404Px3tYgGrZbyt7BUx6CIgCfI/ppRQ==", "user"=>"2", "tableID"=>"1", "array"=>"Ant Man,Spiderman: Homecoming,Civil War,Iron Man,Infinity War,Endgame,Guardians of the Galaxy,Thor ", "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mVote Load (0.1ms)[0m  [1m[34mSELECT "votes".* FROM "votes" WHERE "votes"."userID" = ? AND "votes"."tableID" = ?[0m  [["userID", 2], ["tableID", 1]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.3ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 167]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 168]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 169]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 170]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 171]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.2ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 172]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.3ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 173]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mVote Destroy (0.3ms)[0m  [1m[31mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 174]]
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:9
+  [1m[36mRanktable Load (0.1ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/votes_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."ranktable_id" = ?[0m  [["ranktable_id", 1]]
+  ↳ app/controllers/votes_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Ant Man"], ["rank", 7], ["created_at", "2019-06-04 01:48:04.211399"], ["updated_at", "2019-06-04 01:48:04.211399"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Spiderman: Homecoming"], ["rank", 6], ["created_at", "2019-06-04 01:48:04.213721"], ["updated_at", "2019-06-04 01:48:04.213721"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Civil War"], ["rank", 5], ["created_at", "2019-06-04 01:48:04.215827"], ["updated_at", "2019-06-04 01:48:04.215827"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Iron Man"], ["rank", 4], ["created_at", "2019-06-04 01:48:04.217629"], ["updated_at", "2019-06-04 01:48:04.217629"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.2ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Infinity War"], ["rank", 3], ["created_at", "2019-06-04 01:48:04.219424"], ["updated_at", "2019-06-04 01:48:04.219424"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Endgame"], ["rank", 2], ["created_at", "2019-06-04 01:48:04.221170"], ["updated_at", "2019-06-04 01:48:04.221170"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Guardians of the Galaxy"], ["rank", 1], ["created_at", "2019-06-04 01:48:04.223206"], ["updated_at", "2019-06-04 01:48:04.223206"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[36mVote Create (0.3ms)[0m  [1m[32mINSERT INTO "votes" ("tableID", "userID", "option", "rank", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tableID", 1], ["userID", 2], ["option", "Thor "], ["rank", 0], ["created_at", "2019-06-04 01:48:04.225055"], ["updated_at", "2019-06-04 01:48:04.225055"]]
+  ↳ app/controllers/votes_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/votes_controller.rb:18
+Redirected to http://localhost:3000/ranktables/1/results
+Completed 302 Found in 32ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/ranktables/1/results" for ::1 at 2019-06-03 21:48:04 -0400
+Processing by ResultsController#index as HTML
+  Parameters: {"ranktable_id"=>"1"}
+  [1m[36mRanktable Load (0.2ms)[0m  [1m[34mSELECT  "ranktables".* FROM "ranktables" WHERE "ranktables"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/results_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("votes"."rank") AS sum_rank, "votes"."option" AS votes_option FROM "votes" WHERE "votes"."tableID" = ? GROUP BY "votes"."option"[0m  [["tableID", 1]]
+  ↳ app/controllers/results_controller.rb:4
+  Rendering results/index.html.erb within layouts/application
+  Rendered results/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.5ms)
+
+

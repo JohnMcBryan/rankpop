@@ -6,6 +6,7 @@ class VotesController < ApplicationController
     @vote = Vote.new
   end
   def create
+    Vote.where(userID: current_user.id,tableID: params["tableID"]).destroy_all
     @ranktable3 = Ranktable.find(params["tableID"])
     array = params['array'].split(/,/)
     # puts array
