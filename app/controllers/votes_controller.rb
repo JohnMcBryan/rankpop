@@ -10,9 +10,11 @@ class VotesController < ApplicationController
     array = params['array'].split(/,/)
     # puts array
     rank = 1
+    count = @ranktable3.option.count
     array.each do |value|
       puts value
-      Vote.create(tableID: params["tableID"], userID: params["user"], option: value, rank: rank)
+      points = count - rank
+      Vote.create(tableID: params["tableID"], userID: params["user"], option: value, rank: points)
       rank = rank + 1
     end
     redirect_to ranktable_results_path(@ranktable3)
