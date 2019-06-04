@@ -18,6 +18,9 @@
     <div id="options" class = "list-group">
       <% @options.each do |text| %>
         <ul id = '<%=text.value%>'>
+          <%if text.picture.attached? %>
+            <image src="<%= url_for(text.picture)%>"></image>
+          <%end %>
           <%= text.value %>
         </ul>
       <% end %>
