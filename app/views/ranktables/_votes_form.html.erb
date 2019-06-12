@@ -2,10 +2,12 @@
   <div id="options" class = "list-group">
     <% @options.each do |text| %>
       <ul id = '<%=text.value%>' class = "option_item">
-        <%if text.picture.attached? %>
-          <image style="width:100px;" src="<%= url_for(text.picture)%>"></image>
-        <%end %>
-        <div class="option_text"><%= text.value %></div>
+        <div class = "option_div">
+          <%if text.picture.attached? %>
+            <image style="width:100px;" src="<%= url_for(text.picture)%>"></image>
+          <%end %>
+          <div class = "option_text"><%= text.value %></div>
+        </div>
       </ul>
     <% end %>
   </div>

@@ -1,5 +1,7 @@
 <header style="padding: 5px; color: #F0F0F0; background: #237CBE;">
-  <h1 style="display: inline">RankPop</h1>
+  <%= link_to ranktables_path do%>
+    <h1 class = "header">RankPop</h1>
+  <%end %>
   <%if current_user %>
     <div style="display: inline; float: right">
       <%= link_to image_tag(current_user.picture,size: 30),me_path %>

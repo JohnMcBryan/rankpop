@@ -17,9 +17,23 @@
 
 
 $lightBlue: #F0F8FF;
+$highlight: #0066cc;
 
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.header{
+  display: inline;
+  color: #2E2F30;
+}
 .option_item{
   background: $lightBlue;
+  border-radius: 25px;
+  border: 2px solid $highlight;
   padding: 10px;
   cursor: grab;
 }
@@ -31,6 +45,14 @@ $lightBlue: #F0F8FF;
   display: inline-block;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 30px;
-  line-height: 40px;
+  vertical-align: middle;
+  line-height: normal;
 
+}
+.option_div{
+  padding-left: 25px;
+}
+
+.logo_text{
+  @include vertical-align();
 }

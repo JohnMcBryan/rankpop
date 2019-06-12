@@ -5,18 +5,13 @@
   <p>
     <%= @ranktable.description %>
   </p>
-  <h2>Author</h2>
-  <p>
-    <%= @ranktable.authorName %>
-  </p>
-  <h3>Date</h3>
-  <p>
-    <%= @ranktable.created_at %>
-  </p>
-  <h3>Options</h3>
   <%= render 'votes_form' %>
-  <%= link_to("Homepage", root_path) %>
-  <%= link_to "Delete", ranktable_path(@ranktable), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <p>
+    Author: <%= @ranktable.authorName %>
+  </p>
+  <p>
+    Date Created: <%= @ranktable.created_at %>
+  </p>
   <%= link_to "Results Page", ranktable_results_path(@ranktable) %>
 
 </ranktable>
